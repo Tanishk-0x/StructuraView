@@ -1,0 +1,162 @@
+
+/* //--------- description------------ */
+
+.popup {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    width: 280px;
+    left: 50%;
+    margin-left: -280px;
+    height: 180px;
+    top: 50%;
+    margin-top: -100px;
+    background: #000000;
+    border: 1px solid #9000ff;
+    height: 380px;
+    width: 600px;
+    z-index: 20;
+    border-radius: 12px;
+  }
+  
+  #popup:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -2;
+  }
+  
+  #popup:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFF;
+    background-color: black;
+    border: 1px solid #696969;
+    border-radius: 8px;
+
+
+    z-index: -1;
+  }
+  
+  
+  body {
+    background: offwhite;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+
+  
+  p {
+      margin: 1em 0;
+    font-size: 16px;
+  }
+  
+
+  .popupk {
+    display: none;
+    position: fixed;
+    padding: 10px;
+    width: 400px;
+    left: 50%;
+    height: 380px;
+    margin-left: -280px;
+    top: 50%;
+    margin-top: -100px;
+    background: #000000;
+    border: 1px solid  #9000ff;
+    height: 270px;
+    width: 600px;
+    z-index: 20;
+    border-radius: 12px;
+  }
+  
+
+
+   #popup:after {
+    position: fixed;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -2;
+  }
+  
+  #popup:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #FFF;
+    background-color: black;
+    border: 1px solid #9000ff;
+    border-radius: 8px;
+
+
+    z-index: -1;
+  }
+  
+  body {
+    background: offwhite;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+
+  
+  p {
+      margin: 1em 0;
+    font-size: 16px;
+  }
+
+  #close{
+    background-color: black;
+    border: 1px solid #9000ff;
+    color:  #9000ff ; 
+    height: 30px;
+    width: 68px;
+    border-radius: 2px;
+  }
+
+  #description{
+    color:  rgb(255, 255, 255);
+    font-size: 24px;
+  }
+
+
+  @media (max-width: 600px) {
+    
+    .popup{
+        height: 280px;
+        width: 300px;
+        margin-left: -150px;
+        margin-top: -120px;
+    }
+
+    .popupk{
+        height: 220px;
+        width: 300px;
+        margin-left: -150px;
+        margin-top: -110px;
+    }
+
+    #description{
+        font-size: 14.6px;
+    }
+
+
+
+  }
+  

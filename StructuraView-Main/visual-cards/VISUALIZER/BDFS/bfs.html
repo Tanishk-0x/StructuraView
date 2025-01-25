@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Breadth First Search</title>
+
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <link rel="stylesheet" href="bfs.css">
+  </head>
+
+  <body>
+
+    <header id="header">
+      <h1 id="heading">Breadth First Search</h1>
+
+      <a href="dfs.html"><button id="switch">DFS</button></a>
+
+
+    </header>
+
+    <header id="panel">
+
+      <button id="back" onclick="window.history.back()">
+        Back
+      </button>
+
+      <button onclick="clearCanvas()" class="button-top" id="func">Clear</button
+        ><button class="button-top ml-1" onclick="randomGraph()" 
+        id="func">
+          Random
+        </button>
+
+        <button
+        id="start-button"
+        type="button"
+        onclick="bfs()"
+        class="btn btn-danger red w-100"
+      >
+        Start
+      </button>
+    </header>
+
+
+    <main id="main">
+      <section class="inner-page pt-4">
+        <div class="container-fluid px-0 mt-0">
+          <div class="row w-100 mx-auto">
+            <div class="col-sm-9 col-md-10 mx-0 px-0">
+            </div>
+            <div class="col-sm-3 col-md-2 mr-auto px-0 my-0 py-0 text-right">
+              
+            </div>
+          </div>
+          <div class="data-container border-dark-nb p-1 mb-0 mt-0 w-100">
+            <svg id="visu"></svg>
+          </div>
+          <div class="w-100 row mx-auto border-dark-nt my-0 py-0">
+            <h4>BFS Result : </h4>
+            <p id="nodes" class="my-0 py-0"></p>
+          </div>
+          <div class="row mx-auto">
+            <div class="col-sm-12 col-md-12 col-lg-6 px-0 mr-0">
+              <div class="ide w-100">
+
+              
+                <div class="row ml-auto mr-auto 1">
+                  <span style="color: gray;">// Function to perform BFS .. <br>
+                        // represented using adjacency list</span>
+                </div><br>
+
+
+                <div class="row ml-auto mr-auto mt-1 2">
+                  <span> void bfs(vector<vector<int> >& adjList, int node,
+                    vector<bool>& isvisited)
+           
+                  </span>
+                </div><br>
+
+
+                <div class="row ml-auto mr-auto mt-1 3">
+                    <span style="color: gray;"> // Create a queue for BFS
+                    </span>
+                </div><br>
+
+
+                <div class="row ml-auto mr-auto mt-1 4">
+                  <span> queue < int > q;
+                  </span>
+                </div><br>
+
+
+                <div class="row ml-auto mr-auto mt-1 5">
+                  <span style="color: gray;">// Mark the current node as visited and enqueue it
+                  </span>
+                </div><br>
+
+                <div class="row ml-auto mr-auto mt-1 6">
+                  <span>isvisited[node] = true;
+                  </span>
+                </div>
+
+
+                <div class="row ml-auto mr-auto mt-1 7">
+                  <span>q.push(node);
+                  </span>
+                </div><br>
+
+
+                <div class="row ml-auto mr-auto mt-1 8">
+                  <span style="color: gray;">// Iterate over the queue
+                  </span>
+                </div><br>
+
+
+                <div class="row ml-auto mr-auto mt-1 9">
+                 <span>while (!q.empty()){ </span>
+                </div>
+
+
+                <div class="row ml-auto mr-auto mt-1 10">
+                  <span style="color: gray;">// Dequeue a vertex and print it
+                  </span>
+                </div><br>
+
+
+                <div class="row ml-auto mr-auto mt-1 11">
+                  <span>int frontnode = q.front();
+                  </span>
+                </div>
+
+
+                <div class="row ml-auto mr-auto mt-1 12">
+                  <span>q.pop();</span>
+                </div><br>
+
+
+                <div class="row ml-auto mr-auto mt-1 13">
+                  <span>cout << frontnode << " ";
+                  </span>
+                </div><br>
+
+
+                <div class="row ml-auto mr-auto mt-1 14">
+                  <span>for (auto i:adjList[frontnode]) {
+                  </span>
+                </div>
+
+
+                <div class="row ml-auto mr-auto mt-1 15">
+                  <span>if (!isvisited[i]) {</span>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 ml-0 px-0">
+              <div class="ide w-100 pl-0">
+                <div class="row ml-auto mr-auto">
+                  <span>isvisited[i] = true;
+                  </span>
+                </div><br>
+
+
+                <div class="row ml-auto mr-auto mt-1">
+                  <span>q.push(i);
+                  </span>
+                </div>
+
+
+                <div class="row ml-auto mr-auto mt-1">
+                  <span>&emsp14;}</span>
+                </div>
+
+
+                <div class="row ml-auto mr-auto mt-1">
+                  <span>}</span>
+                </div><br>
+
+
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment w-100">| SHORT EXPLANATION |</span>
+                </div>
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment w-100">---------------------</span>
+                </div>
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment">1. Queue data structure: follows FIFO, and will always contain the starting.
+                  </span>
+                </div>
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment"
+                    >2. Visited array: an array initialized to 0</span
+                  >
+                </div>
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment"
+                    >3. In BFS, we start with a “starting” node, mark it as visited, and push it into the queue data structure.</span
+                  >
+                </div>
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment"
+                    >4. In every iteration, we pop out the node ‘v’ and put it in the solution vector, as we are traversing this node.</span
+                  >
+                </div>
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment"
+                    >5. All the unvisited adjacent nodes from ‘v’ are visited next and are pushed into the queue. The list of adjacent neighbors of the node can be accessed from the adjacency list.</span
+                  >
+                </div>
+
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment"
+                    >6. Repeat steps 2 and 3 until the queue becomes empty, and this way you can easily traverse all the nodes in the graph.</span
+                  >
+                </div>
+
+
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment">&emsp;</span>
+                </div>
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment">&emsp;</span>
+                </div>
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment">&emsp;</span>
+                </div>
+                <div class="row ml-auto mr-auto mt-1">
+                  <span class="comment">&emsp;</span>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <form>
+          </div>
+          <div class="row mx-auto">
+            <div class="col-lg-6"></div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+         
+            </div>
+            <div class="col-4"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+
+<header id="define">
+  <div class="one">
+
+    <div class="theory">
+
+      <p id="heaaading">Breadth First Search or (BFS) for a graph : </p>
+      <p id="para"> Breadth First Search (BFS) is a fundamental graph traversal algorithm. It begins with a node, then first traverses all its adjacent. Once all adjacent are visited, then their adjacent are traversed. This is different from DFS in a way that closest vertices are visited before others. We mainly traverse vertices level by level. A lot of popular graph algorithms like Dijkstra’s shortest path, Kahn’s Algorithm, and Prim’s algorithm are based on BFS. BFS itself can be used to detect cycle in a directed and undirected graph, find shortest path in an unweghted graph and many more problems.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="code">
+    <textarea name="code" id="code">
+      
+
+    // ALGO :-
+    // 1 : srcnode ko queue me daal do 
+    // # : frontnode = q.front() ; 
+    // 2 : frontnode me queue ka front store kara lo 
+    // 3 : queue ko pop krdo aur kyu ki queue ke front me frontnode he to wo hat jayega 
+    // 4 : jo nikala usko True mark kr do 
+    // 5 : store kra lo frontnode ko ans me 
+    // 6 : uske jitne bhi neighbours he unko queue me daal do 
+
+
+
+    #include <iostream>
+    #include <queue>
+    #include <vector>
+
+  using namespace std;
+
+//---------------------------------------- BFS CODE -----------------------------------
+
+  // Function to perform Breadth First Search on a graph
+  // represented using adjacency list
+
+  void bfs(vector<vector<int> >& adjList, int node,
+         vector<bool>& isvisited){
+
+      // Create a queue for BFS
+      queue<int> q;
+
+      // Mark the current node as visited and enqueue it
+      isvisited[node] = true;
+      q.push(node);
+
+      // Iterate over the queue
+      while (!q.empty()) {
+          // Dequeue a vertex from queue and print it
+          int frontnode = q.front();
+
+          q.pop(); // pop kr denge fir .. 
+
+          cout << frontnode << " ";
+
+        // Get all adjacent vertices of the dequeued vertex
+        // frontnode If an adjacent has not been visited,
+        // then mark it visited and enqueue it
+
+          for (auto i:adjList[frontnode]) {
+              if (!isvisited[i]) {
+                  isvisited[i] = true;
+                  q.push(i);
+              }
+          }
+      }
+  }
+
+//------------------------------------------------------------------------------------
+  
+  // function edge ko add krne kke liye .. 
+  // Function to add an edge to the graph
+
+    void addEdge(vector<vector<int> >& adjList, int u, int v){
+          adjList[u].push_back(v);
+    }
+
+//----------------------------------------------------------------------------
+
+    int main(){
+
+        // Number of vertices in the graph
+        int vertices = 5;
+
+        // Adjacency list representation of the graph
+        vector<vector<int> > adjList(vertices);
+
+        // Sample Inputs .. 
+        // Add edges to the graph
+        addEdge(adjList, 0, 1);
+        addEdge(adjList, 0, 2);
+        addEdge(adjList, 1, 3);
+        addEdge(adjList, 1, 4);
+        addEdge(adjList, 2, 4);
+
+        // ek visited data structure jo track rakhega ki koi bhi node visited he ya nhi 
+        // Mark all the vertices as not visited .. 
+        vector<bool> isvisited(vertices, false);
+
+        // Perform BFS traversal starting from vertex 0
+        cout<<"The BFS traversel result is : " << "  " ; 
+
+        // calling bfs function .. 
+        bfs(adjList, 0, isvisited);
+
+        return 0;
+    }
+
+
+
+    </textarea>
+  </div>
+</header>
+
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="assets/js/graphs/unweighted_undirected.js"></script>
+    <script src="assets/js/graphs/graph_helpers.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="bfs.js"></script>
+  
+  </body>
+</html>

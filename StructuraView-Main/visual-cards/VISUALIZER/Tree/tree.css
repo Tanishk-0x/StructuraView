@@ -1,0 +1,160 @@
+
+
+.click{
+    background: linear-gradient(to right , rgb(136, 0, 255) , rgb(184, 102, 247) );
+    color: white;
+    border: none ; 
+    height: 35px;
+    width: 70px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#back{
+    border: 1px solid rgb(128, 0, 255);
+    color: rgb(128, 0, 255);
+    background-color: black;
+    height: 34px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.click{
+    margin-left: 12px;
+}
+
+.click:hover{
+    background: linear-gradient(to left , rgb(136, 0, 255) , rgb(184, 102, 247) );
+}
+
+.container{
+    background-color: rgb(0, 0, 0);
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 740px;
+    margin-right: 30px;
+}
+
+#info_bullets{
+    height: 1px;
+    width: 1px;
+    opacity: 0%;
+}
+
+.info_header , .point{
+    height: 1px;
+    width: 1px;
+    opacity: 0%;
+}
+
+
+.inputs{
+    background-color: green;
+    width: 420px;
+}
+
+.canvas{
+    margin-top: 0px;
+    width: 100%;
+    margin-left: 0%;
+}
+
+@media (max-width: 590px) {
+    
+
+    .controls{
+        width: 100%;
+    }
+
+}
+
+#items{
+    background-color: rgb(0, 0, 0);
+}
+
+.left{
+    background-color: rgb(0, 0, 0);
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+}
+
+
+@media (min-width: 800px) {
+    
+    #items{
+        width: 100%;
+    }
+
+    .left{
+        width: 47%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .code{
+        width: 47%;
+        margin-left: 14px;
+    }
+
+    #vid-ex{
+        width: 98%;
+
+    }
+
+    .explain{
+        width: 100%;
+    }
+
+    #code{
+        width: 98%;
+    }
+
+
+
+}
+
+@media (max-width:590px) {
+    
+    #items{
+    width: 100%;
+    margin-right: 0% ; 
+}
+
+    .left{
+        width: 100%;
+    }
+
+    .code{
+        width: 100%;
+    }
+
+    #code{
+        width: 95%;
+    }
+
+    .explain{
+        width: 100%;
+    }
+
+    #vid-ex{
+        width: 98%;
+    }
+
+    .canvas_container{
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .canvas{
+        margin-right: 0%;
+    }
+}

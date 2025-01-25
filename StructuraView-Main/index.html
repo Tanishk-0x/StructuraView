@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StructuraView</title>
+
+    <link
+    rel="icon"
+    href="title.png"
+    type="image/x-icon"
+/>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.css">
+    
+
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="popup.css">
+
+</head>
+<body>
+
+
+    
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //------- Preoader Section ---------------------------------------------------------------             -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+        #loader {
+            border: 12px solid #000000;
+            border-radius: 50%;
+            border-top: 12px solid #8c00ff;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader" class="center"></div>
+
+
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+
+
+
+    <div class="scroll-container">
+        <div class="video-container first-video">
+
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //-------- NavBar Section------------------------------------------------------------------ -->
+        
+        <header id="header">
+
+                <div class="one">
+                        <div class="logos" >
+                            <img src="logo.jpg" id="logo">
+                        </div>
+                    </h1>
+                </div>
+
+                <div class="two">
+                    <nav>
+                        <a href="DSA/dsa.html" id="li">Explore</a>
+                        <a href="visual-cards/index.html" id="li">Visualize</a>
+                        <a href="Time & Space Complexity/complexity.html" id="li">Complexity</a>
+                        <a href="OOPS/oops.html" id="li">Oop's</a>
+                        <a href="Code_Section/temp.html" id="li">Code</a>
+                    </nav>
+                </div>
+        
+        </header>
+
+<!-- //-------------------------------------------------------------------------- -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+
+            <video autoplay muted loop id="background-video">
+                
+                <source src="one/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+
+
+                Your browser does not support the video tag.
+            </video>
+
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //----- Main Text Section--------------------------------------------------------------------- -->
+
+            <header class="content">
+
+                <div class="main-text">
+                    <div class="inner">
+                        <p id="per" style="color: rgb(186, 186, 186);">Visualize Data structures & algorithm</p>
+
+
+
+                        <h1 id="h1">Think <span style="color:  #6f00c4 ; ">twice</span></h1>
+                        <h1 id="h1"><span style="color:  #6f00c4 ; ">Code </span>Once</h1>
+
+                        
+    
+                        <p id="per-1">Code is like humor. ...
+                            <br>
+                            Make it work, make it right, make it fast.</p>
+                    </div>
+                </div>
+
+            </header>
+
+
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+    
+
+    
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------- Cards Section -----------------------------------------------------------------             -->
+
+
+        </div>
+
+
+        <div class="video-container second-video">
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+
+            <video autoplay muted loop id="background-video">
+                <source src="one/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+
+                
+            </video>
+            
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+
+
+            <div class="first-card">
+                <a href="DSA/dsa.html"><img src="main-imgs/explore.png" id="card-img" class="explore-card" style="border-radius: 7px;"></a>
+                <div class="card-text">Let's Explore</div>
+            </div>
+
+            <div class="second-card">
+                <a href="visual-cards/index.html"><video loop autoplay muted src="main-imgs/vistack.mp4"alt="" id="card-img" style="width: 240px; height: auto; border-radius: 7px;"></a>
+                <div class="card-text-2">Visualize</div>
+            </div>
+            
+            <div class="video-card">
+                <a href="OOPS/oops.html"><img src="main-imgs/oops-main.png" alt="" id="card-img" style="border-radius: 7px;"></a>
+
+                <div class="card-text-3">Object Oriented </></div>
+               
+            </div>
+
+
+            <div class="video-card-2">
+                <a href="Time & Space Complexity/complexity.html"><img src="main-imgs/o(n).jpg" alt="" id="card-img" style="border-radius: 7px;"></a>
+
+                <div class="card-text-4">Complexity</div>
+            </div>
+
+
+            
+            <div class="video-card-3">
+                <a href="Code_Section/temp.html"><img src="main-imgs/code.png" alt="" id="card-img" style="border-radius: 7px;"></a>
+
+                <div class="card-text-5">Code</div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+
+
+
+
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //-------POP_UP SECTION--------------------------------------------------------------- -->
+
+
+<div class="popup" id="popup">
+    <p id="description">Discover structuraView, your go-to platform for visualizing data structures and algorithms. Elevate your learning experience with intuitive and interactive visuals.  a premier platform for visualizing data structures and algorithms. Enhance your understanding through interactive and engaging visual tools. structuraView also contains object oriented programming section , complexity chart section and code section for comprehension learning </p>
+  <a href="#" onclick="hide('popup')" id="close">Close</a>
+</div>
+
+<i style="font-size:24px" class="fa">&#xf0e0;</i>
+
+
+<div class="popupk" id="popupk">
+
+
+  <p id="description">
+    
+    <i class="fa fa-envelope" style="font-size:20px ; color: rgb(80, 80, 80);" ></i> Email:
+     tanishknamdev981@gmail.com <br>
+     
+     <br>
+     
+     <i class="fa fa-linkedin" style="font-size:20px"></i><a href="https://www.linkedin.com/in/tanishk-namdev-06bb97299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="color: rgb(84, 84, 84);">Linked in</a>
+
+<br>
+
+
+<i class="fa fa-github" style="font-size:20px"></i>
+     <a href="" style="color: rgb(83, 83, 83); margin-top: 15px;">Github</a>
+
+     <p style="color: gray;">Made with 💜 by @tanishk</p>
+
+
+
+
+</p>
+
+  <a href="#" onclick="hide('popupk')" id="close">Close</a>
+</div>
+
+
+<!-- //-------------------------------------------------------------------------- -->
+<!-- //-------------------------------------------------------------------------- -->
+<!-- //-------------------------------------------------------------------------- -->
+
+
+    <div class="bottom">
+        <div class="center" >
+            <p id="per-3" onclick="show('popup')" style="margin-left: 20px;">Description</p>
+            <img src="logo 2.png" alt="">
+
+            <a style="text-decoration: none;"><p id="per-2" class="link"  onclick="show('popupk')">links</p></a>
+
+            <a href="contact/touch.html" style="text-decoration: none;"><p id="per-2">Contact</p></a>
+        </div>
+    </div>
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+
+<script src="sliding/slick/script.js" defer></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="sliding/slick/slick.min.js"></script>
+
+<!-- //--------------------------------------------------------------------------             -->
+
+    <script src="second.js"></script>
+</body>
+</html>

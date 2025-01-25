@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority Queue Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- //-------------------------------------------------------------------- -->
+
+    <header id="header">
+        <h1>Priority Queue Visualization</h1>
+    </header>
+
+
+    <header id="panel">
+        <div class="screen">
+            <button id="back" onclick="window.history.back()">Back</button>
+            <div id="display">
+
+            </div>
+        </div>
+        <div class="controls">
+            <input type="number" id="priority" placeholder="Priority">
+            <input type="number" id="value" placeholder="Value">
+        </div>
+        <div class="btns">
+            <button id="enqueue-btn" class="click">Enqueue</button>
+            <button id="dequeue-btn" class="click">Dequeue</button>
+            <button id="peek-btn" class="click">Peek</button>
+        </div>
+    </header>
+
+
+<header id="items">
+
+    <div class="one">
+    <div class="visu">
+        <div class="queue-container">
+            <div class="queue">
+                <!-- queue elements will be rendered here -->
+            </div>
+        </div>
+        </div>
+    </div>    
+
+        <div class="two">
+            <div class="theory">
+                <div class="first">
+                    <p id="para">
+                        <span id="spl">Priority Queue : </span>A priority queue is a type of queue that arranges elements based on their priority values. Elements with higher priority values are typically retrieved or removed before elements with lower priority values. Each element has a priority value associated with it. When we add an item, it is inserted in a position based on its priority value.
+                    </p>
+                </div>
+
+                <div class="second">
+                    <p id="para1"><span id="spn">Insertion in a Priority queue : </span>When a new element is inserted in a priority queue, it moves to the empty slot from top to bottom and left to right. However, if the element is not in the correct place then it will be compared with the parent node. If the element is not in the correct order, the elements are swapped. The swapping process continues until all the elements are placed in the correct position.</p>
+
+                    <p id="para2"><span id="spn">Deletion in a Priority queue : </span>As you know that in a max heap, the maximum element is the root node. And it will remove the element which has maximum priority first. Thus, you remove the root node from the queue. This removal creates an empty slot, which will be further filled with new insertion. Then, it compares the newly inserted element with all the elements inside the queue to maintain the heap invariant.</p>
+
+                    <p id="para3"><span id="spn">Peek in a Priority queue : </span>This operation helps to return the maximum element from Max Heap or the minimum element from Min Heap without deleting the node from the priority queue.</p>
+                </div>
+            </div>
+
+            <div class="imgs">
+                <img src="priority queue.png" id="pqimg">
+            </div>
+        </div>
+
+
+        <div class="code">
+            <textarea name="code" id="code"></textarea>
+        </div>
+
+</header>
+
+    <div class="main">
+
+    </div>
+
+
+
+
+<!-- //-------------------------------------------------------------------- -->
+
+    <script src="script.js"></script>
+</body>
+</html>

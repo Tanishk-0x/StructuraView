@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backtracking Algorithm</title>
+
+
+    <link rel="stylesheet" href="BackTrack.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <h1>
+            Backtracking Visualizer
+        </h1>
+    </header>
+
+
+    <header id="panel">
+
+
+
+        <div class="display">
+
+            <button class="back" onclick="window.history.back()">Back</button>
+
+
+            <div id="screen"></div>
+        </div>
+
+        <div class="ins">     
+            <input id="value-of-n" type="number" min="3" max="7" placeholder="Enter size" onkeyup="validity.valid||(value='');">  
+            <button id="start-visualization" class="click">Create</button>
+            <button id="start-path" class="click">Start</button>
+        </div>
+    </header>
+
+    <header id="instruct">
+        <p style="color: aliceblue;"> <span style="color: rgb(115, 0, 255);">Note :</span> size lies between 3 - 7 </p>
+        <p style="color: aliceblue;">Tap to add breakage</p>
+    </header>
+
+
+
+
+
+        <header id="main">
+
+            <div id="n-queens-visualizer-section"></div>
+
+
+            <div class="content">
+                <header id="btn">
+                    <button id="code" class="click">Code</button>
+                    <button id="theory" class="click" >Theory</button>
+                </header>
+
+                <div id="one">
+                    <textarea name="csk" id="csk"></textarea>
+                </div>
+
+            </div>
+ 
+        </header>
+
+
+
+
+
+    
+    
+    <script src="BackTrack.js"></script>
+   
+   
+
+
+</body>
+
+</html>

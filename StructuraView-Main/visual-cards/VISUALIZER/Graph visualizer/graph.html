@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Graph Visualization</title>
+    
+    <link rel="stylesheet" href="graph.css">
+  </head>
+
+  <body>
+
+<!-- //-------------------------------------------------------------------------- -->
+
+    <header id="header">
+      <h1 id="h1">Graph Visualization</h1>
+    </header>
+
+    <header id="panel">
+
+      <div class="btns">
+      <div class="row w-100 mx-auto">
+        <div class="col-sm-9 col-md-10 mx-0 px-0">
+          
+        </div>
+        <div class="col-sm-3 col-md-2 mr-auto px-0 my-0 py-0 text-right">
+          
+          <div class="first">
+            <div class="text">
+              <h2>Create your graph : </h2>
+            </div>
+          <button onclick="clearCanvas()" class="button-top" id="clear">Clear</button
+          ><button  class="button-top ml-1" onclick="randomGraph()" id="random">
+            Random
+          </button>
+
+        </div>
+
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="change">
+
+      <button id="back" onclick="window.history.back()">Back</button>
+
+
+      <button id="list">List</button>
+      <button id="matrix">Matrix</button>
+      
+
+    </div>
+
+
+    </header>
+
+
+      <section class="inner-page pt-4">
+        <div class="container-fluid px-0 mt-0">
+
+          <div class="data-container">
+            <svg id="visu"></svg>
+          </div>
+
+
+          <header id="items">
+
+            <div class="defin">
+              <div class="theory">
+
+                <p id="heaaading">
+                  What is Graph Data Structre ?
+                </p>
+
+                <p id="para">
+                  Graph is a non-linear data structure consisting of vertices and edges. The vertices are sometimes also referred to as nodes and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph is composed of a set of vertices( V ) and a set of edges( E ). The graph is denoted by G(V, E).
+                </p>
+
+                <p id="comp">
+                  Component of a Graph : 
+                </p>
+
+                <p id="para1">
+                  <span id="spn">Vertices : </span> Vertices are the fundamental units of the graph. Sometimes, vertices are also known as vertex or nodes. Every node/vertex can be labeled or unlabeled.
+                  <br>
+                  
+                    <span id="spn">Edges : </span> Edges are drawn or used to connect two nodes of the graph. It can be ordered pair of nodes in a directed graph. Edges can connect any two nodes in any possible way. There are no rules. Sometimes, edges are also known as arcs. Every edge can be labelled/unlabelled.
+                </p>
+
+              </div>
+
+              <div class="imgs">
+                <img src="assets/graph.png" id="graph-img">
+              </div>
+            </div>
+
+            <div class="code">
+              <textarea name="code" id="code">
+              </textarea>
+            </div>
+
+          </header>
+
+<!-- //--------------------------------------------------------------------------           -->
+
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="assets/js/graphs/unweighted_undirected.js"></script>
+    <script src="assets/js/graphs/graph_helpers.js"></script>
+    <script src="graph.js"></script>
+    <script src="represent.js"></script>
+
+  </body>
+</html>

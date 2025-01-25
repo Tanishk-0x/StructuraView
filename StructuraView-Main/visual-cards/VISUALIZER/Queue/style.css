@@ -1,0 +1,586 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+}
+
+
+
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.queue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.queue-element {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #8000ff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color: #8000ff;
+    transition: background-color 0.5s;
+    background-color: rgb(0, 0, 0);
+}
+
+.queue-element:hover {
+    background-color: #f0f0f0;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+.output {
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+
+#enqueue-input{
+    height: 40px;
+    width: 110px;
+    border-radius: 5px;
+    border: none;
+}
+
+#enqueue-input::placeholder{
+    padding-left: 10px;
+}
+
+#header{
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #7700ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7700ff;
+    font-size: 24px;
+}
+
+.controls{
+    display: flex;
+    flex-direction: row;
+}
+
+#click{
+    background: linear-gradient(to right , rgb(112, 0, 218) , rgb(181, 107, 230) );
+    color: white;
+    height: 38px;
+    width: 88px;
+    margin-left: 10px;
+}
+
+#click:hover{
+    background: linear-gradient(to left , rgb(112, 0, 218) , rgb(181, 107, 230) );
+}
+
+
+.isempty{
+    margin-right: 20px;
+}
+
+
+.one{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 4px;
+
+}
+
+.container{
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.two{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.display{
+    background-color: #000000;
+    height: 60px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+#screen{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 220px;
+    border: 1px solid rgb(136, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8000ff;
+}
+
+.peek{
+    margin-left: 10px;
+}
+
+.enqueue{
+    margin-left: 10px;
+}
+
+.dequeue{
+    margin-left: 10px;
+}
+
+.isempty{
+    margin-left: 10px;
+}
+
+.size{
+    margin-left: 10px;
+}
+
+.main{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center ; 
+    flex-direction: row;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.output{
+    margin-top: 5px;
+    background-color: rgb(0, 0, 0);
+    width: 440px;
+    height: 50px;
+    border: 1px solid rgb(128, 0, 255);
+    color: #7700ff;
+    font-size: 17px;
+}
+
+
+
+.queue{
+    margin-top: 20px;
+    background-color: #000000;
+    height: 150px;
+    border: 1px solid rgb(136, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#p{
+    margin-left: 10px;
+}
+
+#hash{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+    height: 400px;
+}
+
+.para{
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+    font-size: 28px;
+    color: #8000ff;
+}
+
+#code{
+    width: 100%;
+    height: 300px;
+    background-color: #000000;
+    color: #8000ff;
+    border: 1px solid #8000ff;
+    margin-top: 0%;
+    opacity: 0%;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+
+#back{
+    background-color: black;
+    border: 1px solid #7700ff;
+    color: #7700ff;
+    height: 34px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#screen{
+    margin-left: 14px;
+}
+
+#main-queue{
+    background-color: rgb(0, 0, 0);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.queue{
+    width: 1000px;
+}
+
+.left{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    width: 100px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+#arrows{
+    height: 80px;
+    width: auto;
+}
+
+#items{
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.defin{
+    background-color: rgb(0, 0, 0);
+    height: 590px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.theory{
+    height: 290px;
+    width: 790px;
+    background-color: rgb(0, 0, 0);
+}
+
+.imgs{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    width: 790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#queue-img{
+    width: auto;
+    height: 295px;
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+    height: 590px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#codee{
+    height: 585px;
+    width: 790px;
+    border: 1px solid #7700ff;
+    color: #7700ff;
+    background-color: black;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+#codee::-webkit-scrollbar{
+    display: none;
+}
+
+#para{
+    font-size: 17px;
+    color: #7700ff;
+}
+
+#opp{
+    font-size: 17px;
+    color: #7700ff;
+}
+
+#point{
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+}
+
+#spl{
+    color: white;
+    font-size: 20px;
+}
+
+#spn{
+    font-size: 19px;
+    color: white;
+}
+
+/* //---------------------------------------------------------------------- */
+
+@media (max-width: 650px) {
+    
+    #header{
+        height: 50px;
+        font-size: 18px;
+    }
+
+    #para{
+        font-size: 11px;
+    }
+
+    #spn{
+        font-size: 13px;
+    }
+
+    #spl{
+        font-size: 15px;
+    }
+
+    #opp{
+        font-size: 11px;
+    }
+
+    #point{
+        font-size: 12px;
+    }
+
+    #items{
+        height: 750px;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 14px;
+    }
+
+    .defin{
+        width: 340px;
+        height: 400px;
+    }
+
+    .imgs , .theory {
+        width : 340px ;  
+    }
+
+    #queue-img{
+        height: auto;
+        width: 320px;
+    }
+
+    .code{
+        height: 360px;
+        width: 340px;
+        margin-top: 10px;
+    }
+
+    #codee{
+        width: 340px;
+        height: 340px;
+        font-size: 10px;
+    }
+
+    .left , .right {
+        height: 1px ;
+        width: 1px;
+    }
+
+    #arrows{
+        height: 1px;
+        opacity: 0%;
+    }
+
+
+    .controls{
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .one{
+        width: 330px;
+        margin-left: 0%;
+    }
+
+    .two{
+        width: 250px;
+        margin-left: 0%;
+    }
+
+    .main{
+        flex-direction: column;
+        height: 210px;
+        border: none;
+    }
+
+
+    .output{
+        width: 340px;
+    }
+
+    .para{
+        height: 90px;
+        font-size: 14px;
+    }
+
+
+
+
+}
+
+
+@media (min-width: 1300px) {
+    
+    .queue{
+        height: 150px;
+    }
+
+    #code{
+        height: 350px;
+        margin-top: 0%;
+        font-size: 18px;
+        opacity: 100%;
+    }
+
+}
+
+.queue::-webkit-scrollbar{
+    display: none;
+}
+
+.queue{
+    height: 100px;
+    overflow: scroll;
+}
+
+@media (min-width: 920px) {
+    
+    #items{
+        width: 100%;
+    }
+
+    .defin , .code{
+        width: 47%;
+    }
+
+    #theory{
+        width: 95%;
+    }
+
+    .imgs{
+        width: 95%;
+    }
+
+    #queue-img{
+        width: 95%;
+    }
+
+    #codee{
+        margin-left: 10px;
+        background-color: rgb(0, 0, 0);
+    }
+
+    #para{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    
+
+    #items{
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 580px) {
+    
+    #items{
+        margin-top: 300px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    
+    #items{
+        margin: 0%;
+    }
+
+}
+
+#para{
+    margin-left: 14px;
+}

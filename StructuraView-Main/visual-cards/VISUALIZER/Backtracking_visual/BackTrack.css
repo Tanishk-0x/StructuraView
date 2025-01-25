@@ -1,0 +1,413 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(20, 41, 197);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+
+html {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#title-hr {
+    margin: 0 25px;
+}
+
+main {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main>section {
+    border: solid 1px;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 50vw;
+    max-height: 55vh;
+    overflow: scroll;
+    padding: 0 25px 25px 25px;
+}
+
+#description-of-the-algorithm {
+    text-align: left;
+    margin: 25px;
+}
+
+#input-section {
+
+    position: sticky;
+    top: 0;
+
+}
+
+#n-queens-visualizer-section {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+table {
+    border: solid 1px;
+    border-collapse: collapse;
+    margin: 25px;
+}
+
+tr {
+    border: solid 1px;
+}
+
+td {
+    border: solid 1px;
+    height: 88px;
+    text-align: center;
+    width: 88px;
+}
+
+tr:nth-of-type(2n)>td:nth-of-type(2n+1) {
+    background-color: rgba(87, 0, 209, 0.719);
+}
+
+tr:nth-of-type(2n+1)>td:nth-of-type(2n) {
+    background-color: rgba(156, 85, 249, 0.719);
+}
+
+td.blue-background {
+    background-color: blue !important;
+}
+
+td.red-background {
+    background-color: red !important;
+}
+
+#log-section p:not(p.blue-background) {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p.blue-background {
+    background-color: rgb(150, 150, 255);
+    color: white;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+p.blue-background.normal-margin {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p.red-background {
+    background-color: rgb(255, 147, 97);
+    color: white;
+}
+
+p.green-background {
+    background-color: rgba(36, 27, 172, 0.8);
+    color: white;
+}
+
+#log-section p:first-of-type {
+    background-color: white;
+    position: sticky;
+    top: 0;
+
+}
+
+footer>a {
+    text-decoration-line: none;
+}
+
+footer>hr {
+    margin: 25px;
+
+}
+
+@media (max-width: 1180px) {
+    main {
+        justify-content: center;
+    }
+
+    #log-section {
+        margin-top: 25px;
+    }
+}
+
+
+.display{
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    width: 240px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.ins{
+    background-color: rgb(0, 0, 0);
+    height: 52px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#algorithm-visualizer-section{
+    background-color: cyan;
+}
+
+.click{
+    background: linear-gradient(to right , rgb(102, 0, 255) , rgb(174, 121, 238) );
+    border: none;
+    height: 35px;
+    width: 70px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+.click:hover{
+    background: linear-gradient(to left , rgb(102, 0, 255) , rgb(174, 121, 238) );
+}
+
+#value-of-n{
+    background-color: rgb(150, 75, 247);
+    border: none;
+    height: 38px;
+    width: 100px;
+    border-radius: 4px;
+}
+
+#value-of-n::placeholder{
+    padding-left: 10px;
+    color: rgb(241, 241, 241);
+    font-size: 14px;
+}
+
+
+#screen{
+    background-color: rgb(0, 0, 0);
+    height: 44px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid rgb(140, 0, 255);
+}
+
+td{
+    height: 80px;
+    width: 90px;
+}
+
+#n-queens-visualizer-section{
+    background-color: rgb(0, 0, 0);
+    margin-top: 0%;
+    height: 700px;
+    width: 700px;
+
+}
+
+#chess-board{
+    margin-top: 0%;
+}
+
+#algorithm-visualizer-section{
+    background-color: rgb(0, 0, 0);
+    height: 450px;
+}
+
+tbody{
+    height: 10px;
+}
+
+#header{
+    background-color: black;
+    border: 2px solid gray;
+    font-size: 24px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    color: rgb(128, 0, 255);
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+#btn{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    margin-top: 5px;
+}
+
+#panel{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    flex-direction: row ; 
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#instruct{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100%;
+}
+
+.content{
+    background-color: rgb(0, 0, 0);
+    height: 700px;
+    width: 920px;
+}
+
+#one{
+    background-color: rgb(0, 0, 0);
+    width: 900px;
+    height: 550px;
+    margin-left: 10px;
+}
+
+#csk{
+    width: 880px;
+    height: 540px;
+    background-color: black;
+    border: 1px solid rgb(132, 0, 255);
+    color: rgb(132, 0, 255);
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#csk::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media (max-width: 590px) {
+    
+    #header{
+        height: 50px;
+        font-size: 14px;
+        margin-top: 3px;
+    }
+
+    #panel{
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .ins{
+        width: 270px;
+        height: 44px;
+    }
+
+    .display{
+        height: 50px;
+    }
+
+    #n-queens-visualizer-section{
+        height: 400px;
+        width: 360px;
+    }
+
+    .content{
+        height: 500px;
+        width: 360px;
+    }
+
+    #main{
+        flex-direction: column;
+    }
+
+    td{
+        height: 50px;
+        width: 90px;
+    }
+
+    #csk{
+        width: 355px;
+        height: 450px;
+        font-size: 11px;
+    }
+
+
+    #one{
+        width: 360px;
+        margin-left: 0%;
+        height: 500px;
+    }
+
+    #csk{
+        padding-left: 10px;
+    }
+
+}
+
+.button{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back{
+    background-color: black;
+    color: rgb(128, 0, 255);
+    border: 1px solid rgb(128, 0, 255);
+    height: 35px;
+    width: 70px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#header{
+    border: 1px solid rgb(128, 0, 255);
+
+}
+
+@media (max-width: 1250px) {
+    
+    #main{
+        flex-direction: column;
+    }
+
+}

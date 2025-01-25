@@ -1,0 +1,647 @@
+body {
+    text-align: center;
+    background-color: #000000;
+}
+
+.queue-container {
+    width: 80%;
+    margin:  auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.queue-container::-webkit-scrollbar{
+    display: none;
+}
+
+.queue::-webkit-scrollbar{
+    display: none;
+}
+
+.queue {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #cc3636;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.queue-element {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a71f1f;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    background: rgb(208, 158, 158);
+    color: #9963f1;
+    border: 2px solid #9963f1;
+}
+
+.queue-element.animate {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls input[type="number"], .controls input[type="text"] {
+    width: 40%;
+    height: 30px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #000000;
+    background-color: #9963f1;
+}
+
+
+.btn {
+    width: 20%;
+    height: 30px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-success {
+    color: #fff;
+}
+
+.btn-danger {
+    color: #fff;
+}
+
+.btn-info {
+    color: #fff;
+}
+
+.output {
+    margin-top: 20px;
+}
+
+#peek-output {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#header{
+    background-color: #000000;
+    font-size: 24px;
+    color: rgb(115, 0, 255);
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls{
+    background-color: #000000;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns{
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen{
+    background-color: #000000;
+    height: 100px;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#display{
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(139, 9, 238);
+    color: #6200ff;
+}
+
+.click{
+    background: linear-gradient(to right , rgb(149, 0, 255) , rgb(179, 151, 210) );
+    border-radius: 5px;
+    border: none;
+    height: 34px;
+    width: 75px;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.click:hover{
+    background: linear-gradient(to left , rgb(149, 0, 255) , rgb(179, 151, 210) );
+
+}
+
+#priority , #value{
+    border: none;
+    border-radius: 3px;
+}
+
+#priority::placeholder{
+    color: #ffffff;
+}
+
+#value::placeholder{
+    color: #fff;
+}
+
+.queue-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    overflow: hidden;
+    width: 280px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(153, 0, 255);
+    border-radius: 7px;
+
+}
+
+.queue{
+    margin-top: 0%;
+    background-color: #000000;
+    height: 400px;
+    overflow: scroll;
+    transition: 1s;
+    border: 1px solid rgb(106, 0, 255);
+    border-radius: 7px;
+}
+
+.visu{
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+}
+
+.queue-element{
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    margin-top: 0%;
+    height: 35px;
+    border-radius: 4px;
+    border: 2px solid #6200ff;
+    background-color: #ffffff;
+    color: #7300ff;
+}
+
+.content{
+    background-color: rgb(0, 0, 0);
+    height: 450px;
+    width: 1250px;
+    margin-left: 30px;
+    border: 2px solid #6200ff;
+}
+
+#op{
+    color: #6200ff;
+    font-size: 28px;
+}
+
+p{
+    color: white;
+    font-size: 22px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.visu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+}
+
+#value{
+    margin-left: 10px;
+}
+
+#header{
+    border: 1px solid #7300ff;
+    color:  #7300ff;
+    height: 80px;
+    font-size: 24px;
+}
+
+.controls , .screen , .btns{
+    background-color: rgb(0, 0, 0);
+    height: 55px;
+}
+
+#panel{
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#display{
+    margin-left: 20px;
+}
+
+#items{
+    margin-top: 10px;
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.two{
+    background-color: rgb(0, 0, 0);
+    height: 590px;
+    width: 600px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgs{
+    height: 270px;
+    background-color: rgb(0, 0, 0);
+    width: 585px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pqimg{
+    height: 265px;
+    width: 580px;
+}
+
+.theory{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    margin-top: px;
+    width: 585px;
+
+}
+
+.first{
+    background-color: rgb(0, 0, 0);
+    height: 70px;
+}
+
+.second{
+    background-color: rgb(0, 0, 0);
+    margin-top: 0%;
+}
+
+#spl{
+    color: #7300ff;
+    font-size: 16px;
+}
+
+#spn {
+    color: #7300ff;
+    font-size: 16px ;
+}
+
+#para{
+    color: white;
+    font-size: 15px;
+}
+
+#para1 , #para2 , #para3 {
+    color: white;
+    font-size: 13px;
+}
+
+.one{
+    background-color: rgb(0, 0, 0);
+    height: 590px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+    height: 590px;
+    width: 640px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#code{
+    background-color: black;
+    color: #7300ff;
+    border: 1px solid #7300ff;
+    border-radius: 7px;
+    height: 585px;
+    width: 635px ;
+    font-size: 18px;
+}
+
+#code::-webkit-scrollbar{
+    display: none;
+}
+
+#back{
+    border: 1px solid #7300ff;
+    color: #7300ff;
+    background-color: black;
+    height: 34px;
+    width: 70px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* //---------------------------------------------------------------------- */
+
+@media (max-width: 590px) {
+    
+        #header{
+            height: 50px;
+            font-size: 11px;
+        }
+
+        #panel{
+            flex-direction: column;
+            height: 140px;
+            margin-top: 5px;
+        }
+
+        #priority , #value{
+            height: 20px;
+            width: 130px;
+            border: none;
+        }
+
+        #value{
+            margin-left: 10px;
+        }
+
+        #display{
+            height: 40px;
+        }
+
+        .controls{
+            margin-top: 5px;
+            width: 340px;
+            height: 50px;
+        }
+
+        .screen{
+            height: 40px;
+        }
+
+        .btns{
+            margin-top: 0%;
+            height: 40px;
+        }
+
+        .imgs{
+            margin-top: 5px;
+        }
+
+        #para{
+            color: #ffffff;
+            font-size: 15px;
+        }
+
+        .queue{
+            height: 300px;
+        }
+
+        .content{
+            height: 850px;
+            width: 340px;
+            margin-left: 0%;
+        }
+
+        .main{
+            flex-direction: column;
+        }
+
+
+        #op{
+            font-size: 22px;
+        }
+        
+        p{
+            font-size: 18px;
+        }
+
+        #para{
+            font-size: 18px;
+        }
+
+        .click{
+            width: 68px;
+        }
+
+        #items{
+            width: 100%;
+            flex-direction: column;
+            margin-top: 280px;
+        }
+
+        .one , .two , .code{
+            width: 340px;
+        }
+
+        .two{
+            margin-top: 10px;
+        }
+
+        #code{
+            width: 340px;
+            height: 340px;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .imgs , .theory {
+            width: 340px;
+        }
+
+        .imgs{
+            height: 145px;
+        }
+
+        #pqimg{
+            height: 140px;
+            width: 330px;
+        }
+
+        #spl{
+            font-size: 12px;
+        }
+
+        #spn{
+            font-size: 11px;
+        }
+
+        #para{
+            font-size: 11px;
+        }
+
+        #para1 , #para2 , #para3 {
+            font-size: 10px;
+        }
+
+
+}
+
+.queue-element{
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    margin-top: 0%;
+    height: 35px;
+    border-radius: 7px;
+    border: 1px solid #6200ff;
+    background-color: #ffffff;
+    color: #7300ff;
+}
+
+#items{
+    background-color: rgb(0, 0, 0);
+}
+
+.one
+{
+    background-color: rgb(0, 0, 0);
+}
+
+.two{
+    background-color: rgb(0, 0, 0);
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+}
+
+.visu{
+    background-color: rgb(0, 0, 0);
+}
+
+.theory{
+    background-color: rgb(0, 0, 0);
+}
+
+.imgs{
+    background-color: rgb(0, 0, 0);
+}
+
+@media (min-width: 1000px) {
+    
+    #items{
+        width: 100%;
+    }
+
+    .one{
+        width: 25%;
+    }
+
+    .two{
+        width: 40%;
+    }
+
+    .code{
+        width: 35%;
+    }
+
+    .theory{
+        width: 98%;
+    }
+
+    .imgs{
+        width: 98%;
+    }
+
+    #pqimg{
+        width: 95%;
+    }
+
+}
+
+
+@media (max-width: 590px) {
+    
+    #items{
+        width: 100%;
+    }
+
+    .one{
+        width: 100%;
+    }
+
+    .two{
+        width: 100%;
+    }
+
+    .code{
+        width: 100%;
+    }
+
+    #code{
+        width: 98%;
+    }
+
+    .theory{
+        width: 98%;
+    }
+
+    .imgs{
+        width: 98%;
+    }
+
+    #pqimg{
+        width: 98%;
+    }
+
+}

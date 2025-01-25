@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 200vh; 
+    font-family: Arial, sans-serif;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    width: 100vw;
+    position: relative;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: transform 1s ease-out;
+}
+
+.first-video {
+    left: 0;
+}
+
+.second-video {
+    left: 100vw; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 84vh;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.content p {
+    font-size: 1.5em;
+}
+
+.h1-tag {
+    color: white;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: Bugatti Text Regular, sans-serif;
+    font-weight: bold;
+}
+
+#per {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+#h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+#per-1 {
+    font-size: 22px;
+    margin-bottom: 100px;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed; 
+    bottom: 0;
+    background-color: rgba(43, 41, 41, 0.5); 
+    z-index: 10; 
+}
+
+.bottom img {
+    height: 4vh;
+}
+
+.center {
+    width: 70%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#per-3 {
+    color: white;
+}
+
+#per-2 {
+    color: white;
+}
+
+.card-text,
+.card-text-2,
+.card-text-3,
+.card-text-4,
+.card-text-5{
+    height: 5vh;
+    width: 300px;
+    position: absolute;
+
+    color:  white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 265px;
+    
+
+}
+/* .card-text-2{ */
+    /* height: 5vh; */
+    /* width: 300px; */
+    /* position: absolute; */
+    /* bottom: 10px; */
+    /* left: 10px; */
+    /* color: white; */
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* padding: 5px 10px; */
+    /* border-radius: 5px; */
+    /* font-size: 30px; */
+    /* z-index: 1; */
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+/*      */
+/*  */
+/* } */
+/*  */
+
+.first-card,
+.second-card,
+.video-card,
+.video-card-2,
+.video-card-3 {
+    height: 58vh; 
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.first-card img,
+.second-card img,
+.video-card img,
+.video-card-2 img,
+.video-card-3 img {
+    height: 58vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video-card video,
+.video-card-2 video,
+.video-card-3 video {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5em;
+    }
+
+    .content p {
+        font-size: 1.2em;
+    }
+
+    #h1 {
+        font-size: 40px;
+    }
+
+    .first-card,
+    .second-card,
+    .video-card,
+    .video-card-2,
+    .video-card-3 {
+        width: 18%;
+    }
+
+    .video-container.second-video {
+        flex-direction: column;
+        width: 460%;
+    }
+
+    .bottom img {
+        height: 3vh;
+    }
+
+    .center {
+        width: 90%;
+    }
+
+    .first-card, .second-card, .video-card, .video-card-2, .video-card-3 {
+        width: 18%;
+    }
+}
+
+
+  .explore-card:hover{
+    height: 100px;
+  }
+
+  .bottom{
+    margin-bottom: 14px;
+  }

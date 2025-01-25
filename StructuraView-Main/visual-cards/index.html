@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizualise Different Data Structures & Algorithms</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="preloader.css">
+</head>
+<body>
+
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //------- Preoader Section ---------------------------------------------------------------             -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+        #loader {
+            border: 12px solid #000000;
+            border-radius: 50%;
+            border-top: 12px solid #8c00ff;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader" class="center"></div>
+
+
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+
+
+
+
+
+
+   <header id="header">
+
+      <button id="back" onclick="window.history.back()">Back</button>
+
+      <p>Vizaualise Data Structure & Algorithms</p>
+   </header>
+
+
+    <div class='flex-box'>
+
+        <div class='card'>
+
+         <a href="VISUALIZER/Stack/Stack_Algo/stack.html">
+            <div class='img'>
+               
+             <img src="Vizual-card-img/stack-1.png" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Stack</a>
+         </div>
+
+         <div class='card'>
+            <a href="VISUALIZER/Queue/index.html">
+            <div class='img'>
+             <img src="Vizual-card-img/queue.png" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Queue</a>
+         </div>
+
+         <div class='card'>
+            <a href="VISUALIZER/Linked list/index.html">
+            <div class='img'>
+             <img src="Vizual-card-img/linked-list.png" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Linked list</a>
+         </div>
+
+         <div class='card'>
+            <a href="VISUALIZER/Tree/index.html">
+            <div class='img'>
+             <img src="Vizual-card-img/binary tree.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Tree</a>
+         </div>
+
+         <div class='card'>
+            <a href="VISUALIZER/Trie/index.html">
+            <div class='img'>
+             <img src="Vizual-card-img/trie.png" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Trie</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/searching algorithms/search.html">
+            <div class='img'>
+             <img src="Vizual-card-img/searching.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Searching</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/Sorting Algo/ref.html">
+            <div class='img'>
+             <img src="Vizual-card-img/sorting-1.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Sorting</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/BDFS/bfs.html">
+            <div class='img'>
+             <img src="Vizual-card-img/BFS.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">BFS</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/BDFS/dfs.html">
+            <div class='img'>
+             <img src="Vizual-card-img/DFS.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">DFS</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/Graph visualizer/graph.html">
+            <div class='img'>
+             <img src="Vizual-card-img/graph.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Graph</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/Tree_traversel/Inorder.html">
+            <div class='img'>
+             <img src="Vizual-card-img/traversel.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Tree Traversel</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/BitWise Operators/BitWise_Operator.html">
+            <div class='img'>
+             <img src="Vizual-card-img/bitwise.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">BitWise Operator</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/Backtracking_visual/BackTrack.html">
+            <div class='img'>
+             <img src="Vizual-card-img/backtracking.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Backtracking</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/Prioty_Queue/index.html">
+            <div class='img'>
+             <img src="Vizual-card-img/priority queue.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Priority Queue</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/Dijkshtra/path.html">
+            <div class='img'>
+             <img src="Vizual-card-img/dijsktra.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Dijkstra Algorithm</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/calling/calling.html">
+            <div class='img'>
+             <img src="Vizual-card-img/calling.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Function Calling</a>
+         </div>
+
+
+         <div class='card'>
+            <a href="VISUALIZER/MAP/index.html">
+            <div class='img'>
+             <img src="Vizual-card-img/map.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Map</a>
+         </div>
+
+         <div class='card'>
+            <a href="VISUALIZER/SET-VISUAL/index.html">
+            <div class='img'>
+             <img src="Vizual-card-img/set.jpg" id="card-img">
+            </div>
+         </a>
+            <a href='' id="a">Set</a>
+         </div>
+
+
+
+
+
+
+
+
+
+     </div>
+
+    
+</body>
+</html>

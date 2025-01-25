@@ -1,0 +1,612 @@
+body {
+    background-color: black;
+    color:rgb(255, 255, 255);
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px; 
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.controls > * {
+    margin: 10px;
+}
+
+#visualization {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 300px;
+}
+
+.bar {
+    /* width: 20px; */
+    margin: 0 1px;
+    background-color: #6600ff;
+}
+
+
+#heading {
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* border: 2px solid gray; */
+    font-weight: 600;
+    color: #6600ff;
+}
+
+.def {
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+
+#algorithm , #speed{
+    border: none;
+    border-radius: 2px;
+}
+
+.back{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#back{
+    background-color: black;
+    border: 1px solid #6600ff;
+    color: #6600ff;
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+}
+
+#defination {
+    background-color: rgb(0, 0, 0);
+    height: 90px;
+    width: 600px;
+
+}
+
+#complexity{
+    background-color: rgb(0, 0, 0);
+    height: 90px;
+    width: 150px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid gray; */
+}
+
+.def{
+    border: 1px solid #6600ff;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+#defination{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#visualization{
+    background-color: rgb(0, 0, 0);
+    /* border: 1px solid #6600ff; */
+    border-radius: 3px;
+    width: 780px;
+    height: 410px;
+}
+
+.btns{
+    border: none;
+    background: linear-gradient(to right , rgb(102, 0, 255) , rgb(154, 65, 227) );
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.visual{
+    background-color: rgb(0, 0, 0);
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 790px;
+}
+
+.define{
+    background-color: rgb(0, 0, 0);
+    height: 120px;
+    width: 790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns:hover{
+    background: linear-gradient(to left , rgb(102, 0, 255) , rgb(154, 65, 227) );
+}
+
+#items{
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#visualization {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.left{
+    background-color: rgb(0, 0, 0);
+    width: 800px;
+    height: 590px;
+}
+
+#code{
+    background-color: black;
+    border: 1px solid #6600ff;
+    color: #6600ff;
+    height: 590px;
+    width: 790px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+#code::-webkit-scrollbar{
+    display: none;
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+    height: 590px;
+    width: 790px;
+}
+@media screen and (min-width: 1100px) {
+    .def {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        border: 1px solid #6600ff;
+    }
+
+    #heading {
+        margin-top: 10px;
+        font-size: 60px;
+        height: 80px;
+        border: 2px solid #6600ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bar {
+        height: 400px;
+        width: 40px;
+        font-size: 20px;
+    }
+
+    .tess {
+        font-size: 18px;
+    }
+
+    .controls{
+        border: 2px solid rgb(0, 0, 0);
+    } 
+
+    #code::-webkit-scrollbar{
+        display: none;
+    }
+
+    #visualization {
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 3px;
+    }
+
+    #heading {
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+    #defination {
+        border: 2px solid rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #complexity {
+        border: 2px solid rgb(0, 0, 0);
+    }
+}
+
+#header{
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center ; 
+    border: 1px solid #6600ff;
+}
+
+#defination {
+    background-color: rgb(0, 0, 0);
+}
+
+#complexity{
+    background-color: rgb(0, 0, 0);
+}
+
+#infos{
+    background-color: rgb(0, 0, 0);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 590px) {
+
+
+    #header {
+       font-size: 34px ;
+       height: 50px; 
+    }
+
+    .visual{
+        width: 340px;
+        height: 280px;
+    }
+
+    #visualization{
+        width: 340px;
+    }
+
+    .code{
+        width: 340px;
+        height: 340px;
+        margin-right: 8px;
+    }
+
+    #code{
+        width: 340px;
+        height: 340px;
+    }
+
+    .left{
+        width: 340px;
+    }
+
+    .define{
+        width: 340px;
+    }
+
+    .def{
+        width: 340px;
+    }
+
+    #defination{
+        width: 260px;
+    }
+
+    #complexity{
+        width: 80px;
+    }
+
+
+    #items{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+
+    #visualization {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 270px;
+    }
+
+
+    .bar {
+        height: 400px;
+        width: 15px;
+        font-size: 10px;
+    }
+
+    .comp {
+        font-size: 10px;
+    }
+
+    .tess {
+        font-size: 10px;
+    }
+
+    #infos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .def{
+        width: 340px;
+        margin-top: 4px;
+    }
+
+    #defination{
+        font-size: 11px;
+    }
+
+    #code{
+        font-size: 12px;
+    }
+
+
+}
+
+
+.container {
+    margin-top: 2px;
+}
+
+/* #visualization {
+    border: 2px solid gray;
+} */
+
+.bar {
+    margin-bottom: 100px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.btns {
+    background-color: #6600ff;
+    color: white;
+    padding: 8px 10px ;
+}
+
+#algorithm , #speed {
+    background-color:  #6600ff;
+    color: white;
+    padding: 7px 9px;
+}
+
+.tess {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.comp {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+@media (min-width: 590px ) {
+    
+    #items{
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .left{
+        background-color: rgb(0, 0, 0);
+        width: 47%;
+    }
+    
+    .code{
+        background-color: rgb(0, 0, 0);
+        width: 47%;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+    }
+
+    #code{
+        width: 95%;
+    }
+
+    .def ,.define {
+        width: 95%;
+    }
+
+    #defination{
+        font-size: medium;
+    }
+
+    .visual{
+        background-color: rgb(0, 0, 0);
+        width: 95%;
+    }
+
+    #visualization{
+        width: 98%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 590px) {
+
+
+    #header {
+       font-size: 34px ;
+       height: 50px; 
+    }
+
+    .visual{
+        width: 340px;
+        height: 280px;
+    }
+
+    #visualization{
+        width: 95%;
+    }
+
+    .code{
+        width: 95%px;
+        height: 340px;
+        margin-right: 8px;
+    }
+
+    #code{
+        width: 95%px;
+        height: 340px;
+    }
+
+    .left{
+        width: 95%;
+    }
+
+    .define{
+        width: 100%;
+    }
+
+    .def{
+        width: 95%;
+    }
+
+    #defination{
+        width: 75%;
+    }
+
+    #complexity{
+        width: 25%;
+    }
+
+
+    #items{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+
+    #visualization {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 270px;
+    }
+
+
+    .bar {
+        height: 400px;
+        width: 15px;
+        font-size: 10px;
+    }
+
+    .comp {
+        font-size: 10px;
+    }
+
+    .tess {
+        font-size: 10px;
+    }
+
+    #infos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .def{
+        width: 95%;
+        margin-top: 4px;
+    }
+
+    #defination{
+        font-size: 11px;
+    }
+
+    #code{
+        font-size: 12px;
+    }
+
+    #items{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left{
+        width: 98%;
+    }
+
+    .code{
+        width: 98%;
+    }
+
+    #code{
+        width: 98%;
+    }
+
+    .visual{
+        width: 97%;
+    }
+
+    #visualization{
+        width: 100%;
+    }
+
+}
+
+
+
+
+@media (min-width: 1000px) {
+    
+    #items{
+        flex-direction: row;
+    }
+
+}

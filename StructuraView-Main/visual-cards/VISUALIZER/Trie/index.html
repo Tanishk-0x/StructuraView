@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Trie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="exs.css">
+    <title>Trie Visualizer</title>
+  </head>
+  <body>
+
+
+
+
+
+
+      <header id="header">
+        <h1>Trie data structure Visualzer</h1>
+      </header>
+
+
+      <header id="panel">
+
+        <div class="zero">
+          <button id="back" onclick="window.history.back()">Back</button>
+        </div>
+
+        <div class="one">
+          <input type="text" id="InsertNodeField" placeholder="Enter the word" />
+          <button type="button" id="InsertButton" class="button" >Insert</button>
+        </div>
+
+        <div class="two">
+          <input type="text" id="DeleteNodeField" placeholder="Enter the word" />
+          <button type="button" id="DeleteButton" class="button">Delete</button>
+        </div>
+
+
+      </header>
+      
+
+
+      <header id="main">
+        <div class="Canvas"></div>
+
+        
+      </header>
+
+<header id="comp">
+
+  <div class="theory">
+
+    <h2 id="has">what is Trie data structure ? </h2>
+    <p class="p1">Trie data structure is defined as a Tree based data structure that is used for storing a collection of strings and performing efficient search, insert, delete, prefix search and sorted-traversal-of-all operations on them</p>
+
+    <h2 id="has">How the trie works ?</h2>
+    <p class="p2">Trie data structure can contain any number of characters including alphabets, numbers, and special characters. But for this article, we will discuss strings with characters a-z. Therefore, only 26 pointers need for every node, where the 0th index represents ‘a’ and the 25th index represents ‘z’ characters.
+
+      Any lowercase English word can start with a-z, then the next letter of the word could be a-z, the third letter of the word again could be a-z, and so on. So for storing a word, we need to take an array (container) of size 26 and initially, all the characters are empty as there are no words </p>
+
+      <h2 id="has">Algorithm for Trie : </h2>
+      <p class="algo1"><span id="spn">1 . </span>Define a function insert(TrieNode *root, string &word) which will take two parameters one for the root and the other for the string that we want to insert in the Trie data structure.</p>
+  
+      <p class="algo2"><span id="spn">2 . </span>Now take another pointer currentNode and initialize it with the root node.
+      </p>
+
+      <p class="algo3"><span id="spn">3 . </span>Iterate over the length of the given string and check if the value is NULL or not in the array of pointers at the current character of the string.</p>
+  
+      <p class="algo4"><span id="sph">#</span>If It’s NULL then, make a new node and point the current character to this newly created node</p>
+    
+      <p class="algo5"><span id="sph">#</span>Move the curr to the newly created node.</p>
+
+      <p class="algo7"><span id="spn">4 . </span>Finally, increment the wordCount of the last currentNode, this implies that there is a string ending currentNode</p>
+    
+    
+    
+    </div>
+
+
+      <div class="content">
+        <textarea name="code" id="code">
+
+          #include<iostream>
+          using namespace std ;
+            
+            class TrieNode {
+            
+                public: 
+                    char data ; 
+                    TrieNode* children[26] ; 
+                    bool isTerminal ; 
+            
+                    TrieNode(char ch){
+            
+                        data = ch ; 
+                        for(int i=0 ; i<26 ; i++){
+                            children[i] = NULL ; 
+                        }
+                        isTerminal = false ; 
+                        
+                    }
+            }; 
+            
+  //-----------------------------------------------------------------------
+  // insertion .. 
+            
+            class Trie{
+            
+                public:
+                TrieNode* root ; 
+            
+                // constructor ... 
+                Trie(){
+                    root = new TrieNode('\0') ; 
+                }
+                
+            
+                void insertUtils(TrieNode* root , string word){
+                    // base case .. 
+                    if(word.length() == 0 ){
+                        root->isTerminal = true ; 
+                        return ; 
+                    }
+            
+                    // asuming the words are in the caps .. 
+                    int index = word[0] - 'A' ; 
+            
+                    TrieNode* child ; 
+                    
+                    // present case .. bss age badh jao .. 
+                    if( root->children[index] != NULL ){
+                        child = root->children[index] ; 
+                    }
+                    // absent wala case ... create kr do .. 
+                    else{
+                        child = new TrieNode(word[0]) ; 
+                        root->children[index] = child ; 
+                    }
+            
+                    // Recursion sambhal lega .. 
+                    insertUtils(child , word.substr(1)) ; 
+                }
+            
+            
+            
+                void insertWord(string word){
+                    insertUtils(root , word) ; 
+                }
+            
+  //----------------------------------------------------------------------
+  // search ... 
+            
+                bool searchUtils(TrieNode* root , string word){
+            
+                    // base case .. 
+                    if(word.length() == 0 ){
+                        return root->isTerminal ; 
+                    }
+                    
+                    int index = word[0] - 'A' ; 
+            
+                    TrieNode* child ; 
+            
+                     // present wala case ..    
+                    if( root->children[index] != NULL ){
+                        child = root->children[index] ; 
+                    }
+                    // absent wala case .. 
+                    else{
+                        return false ; 
+                    }
+            
+                    // Recursion.....
+                    return searchUtils( child , word.substr(1) ) ;  
+                } 
+            
+            
+            
+                bool searchWord(string word){
+            
+                    return searchUtils( root , word ) ; 
+            
+            }
+            
+            
+            
+            }; 
+
+  //------------------------------------------------------------------------
+            
+            
+            int main (){
+            
+                Trie *t = new Trie() ; 
+            
+                t->insertWord("HEYY") ; 
+            
+                cout<<"present he ya nhi : "<< t->searchWord("HEYY") ; 
+            
+                return 0 ; 
+            }
+
+
+        </textarea>
+      </div>
+
+
+
+
+    </header>
+
+      <header id="warning">
+        <h1 id="text">Visualization does not compatible with this screen ratio</h1>
+      </header>
+
+
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.5.0/d3.min.js"
+      integrity="sha512-0XfwGD1nxplHpehcSVI7lY+m/5L37PNHDt+DOc7aLFckwPXjnjeA1oeNbru7YeI4VLs9i+ADnnHEhP69C9CqTA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

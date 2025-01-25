@@ -1,0 +1,272 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="path.css" />
+  
+  <title> Dijkstra Algorithm </title>
+
+
+  </head>
+  <body style="background-color: black;">
+
+
+    <!-- // ------------------------------------------------------- -->
+    <header id="main-head">Dijkshtra Algorithm</header>
+    
+    <div id="header" style="background-color: black;">
+      <div id="header-right" style="background-color: black;">
+        <div>
+
+           <select style="opacity: 0%;" id="algorithm_type" name="sort_type">
+          </select>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <div id="buttonsdiv">
+
+      <button id="back" onclick="window.history.back()">Back</button>
+
+      <button id="visualizeButton" class="button"><p>Start</p></button>
+      <button id="clearButton" class="button"><p>Reset</p></button>
+    </div>
+
+
+
+    
+    <!-- // ------------------------------------------------------- -->
+    
+    <div class="instant">
+      <div id="container"></div>
+    </div>
+
+
+    <!-- // ------------------------------------------------------- -->
+
+
+
+    <!-- // ------------------------------------------------------- -->
+
+    <!-- // --------------- indicators -------------------------------- -->
+
+    <div id="indicator-container">
+      <div class="indicator">
+        <div class="indicator-block" id="start-indicator"></div>
+        <div><p>Starting Position</p></div>
+      </div>
+      <div class="indicator">
+        <div class="indicator-block" id="end-indicator"></div>
+        <div><p>Ending Position</p></div>
+      </div>
+      <div class="indicator">
+        <div class="indicator-block" id="visited-indicator"></div>
+        <div><p>Visited Node</p></div>
+      </div>
+      <div class="indicator">
+        <div class="indicator-block" id="wall-indicator"></div>
+        <div><p>Wall</p></div>
+      </div>
+      <div class="indicator">
+        <div class="indicator-block" id="path-indicator"></div>
+        <div><p>Path</p></div>
+      </div>
+    </div>
+
+
+
+
+
+    <header id="items">
+
+      <div class="left">
+        <div class="define">
+
+          <p id="spl">
+            Dijkstra Algorithm : 
+          </p>
+
+          <p id="para">
+            Dijkstra’s algorithm is a popular algorithms for solving many single-source shortest path problems having non-negative edge weight in the graphs i.e., it is to find the shortest distance between two vertices on a graph
+          </p>
+
+          <p id="spn">
+            Algorithm for Dijkstra’s Algorithm : 
+          </p>
+
+          <p id="para1">
+            <span id="point">1 . </span>Mark the source node with a current distance of 0 and the rest with infinity. <br>
+            <span id="point">2 . </span>Set the non-visited node with the smallest current distance as the current node. <br>
+            <span id="point">3 . </span>For each neighbor, N of the current node adds the current distance of the adjacent node with the weight of the edge connecting 0->1. If it is smaller than the current distance of Node, set it as the new current distance of N. <br>
+            <span id="point">4 . </span>Mark the current node 1 as visited. <br>
+            <span id="point">5 . </span>Go to step 2 if there are any nodes are unvisited
+          </p>
+
+        </div>
+
+        <div class="ex">
+          <img src="dijkshtra-ex.png" id="dij-ex">
+        </div>
+      </div>
+
+      <div class="code">
+        <textarea name="code" id="code">
+
+    // Program to find Dijkstra's shortest path using
+    // priority_queue in STL
+          
+  #include <bits/stdc++.h>
+  using namespace std;
+  #define INF 0x3f3f3f3f
+
+  // iPair ==> Integer Pair
+  typedef pair<int, int> iPair;
+
+  // This class represents a directed graph using
+  // adjacency list representation
+
+  class Graph {
+      int V; // No. of vertices
+
+      // In a weighted graph, we need to store vertex
+      // and weight pair for every edge
+      list<pair<int, int> >* adj;
+
+  public:
+
+      Graph(int V); // Constructor
+
+      // function to add an edge to graph
+      void addEdge(int u, int v, int w);
+
+      // prints shortest path from s
+      void shortestPath(int s);
+  };
+
+  // Allocates memory for adjacency list
+  Graph::Graph(int V)
+  {
+      this->V = V;
+      adj = new list<iPair>[V];
+  }
+
+
+  void Graph::addEdge(int u, int v, int w)
+  {
+      adj[u].push_back(make_pair(v, w));
+      adj[v].push_back(make_pair(u, w));
+  }
+
+
+  // Prints shortest paths from src to all other vertices
+
+  void Graph::shortestPath(int src)
+  {
+
+      // Create a priority queue to store vertices that
+      // are being preprocessed. This is weird syntax in C++.
+      // Refer below link for details of this syntax
+
+      priority_queue<iPair, vector<iPair>, greater<iPair> > pq;
+
+
+      // Create a vector for distances and initialize all
+      // distances as infinite (INF)
+      vector<int> dist(V, INF);
+
+
+      // Insert source itself in priority queue and initialize
+      // its distance as 0.
+
+      pq.push(make_pair(0, src));
+      dist[src] = 0;
+
+
+      /* Looping till priority queue becomes empty (or all
+      distances are not finalized) */
+
+      while (!pq.empty()) {
+
+          // The first vertex in pair is the minimum distance
+          // vertex, extract it from priority queue.
+          // vertex label is stored in second of pair (it
+          // has to be done this way to keep the vertices
+          // sorted distance (distance must be first item
+          // in pair)
+
+          int u = pq.top().second;
+          pq.pop();
+
+          // 'i' is used to get all adjacent vertices of a
+          // vertex
+
+          list<pair<int, int> >::iterator i;
+
+          for (i = adj[u].begin(); i != adj[u].end(); ++i) {
+
+              // Get vertex label and weight of current
+              // adjacent of u.
+
+              int v = (*i).first;
+              int weight = (*i).second;
+
+              // If there is shorted path to v through u.
+
+              if (dist[v] > dist[u] + weight) {
+                  // Updating distance of v
+
+                  dist[v] = dist[u] + weight;
+                  pq.push(make_pair(dist[v], v));
+              }
+          }
+      }
+
+      // Print shortest distances stored in dist[]
+      printf("Vertex Distance from Source\n");
+
+      for (int i = 0; i < V; ++i)
+          printf("%d \t\t %d\n", i, dist[i]);
+    }
+
+  // Driver program to test methods of graph class
+
+  int main()
+  {
+      // create the graph given in above figure
+      int V = 7;
+      Graph g(V);
+
+      // making above shown graph
+      g.addEdge(0, 1, 2);
+      g.addEdge(0, 2, 6);
+      g.addEdge(1, 3, 5);
+      g.addEdge(2, 3, 8);
+      g.addEdge(3, 4, 10);
+      g.addEdge(3, 5, 15);
+      g.addEdge(4, 6, 2);
+      g.addEdge(5, 6, 6);
+      g.shortestPath(0);
+
+      return 0;
+  }
+
+
+        </textarea>
+      </div>
+
+    </header>
+
+
+    <!-- // ------------------------------------------------------- -->
+
+    <script src="path.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="efx.css">
+	<title>Linked list Visualizer</title>
+</head>
+
+<body>
+
+	<header id="header">
+		<h1>Linked List Visualizer</h1>
+	</header>
+
+
+	<header id="panel">
+		<div class="one">
+
+			<div class="display">
+				<div id="screen">
+					<button id="back" onclick="window.history.back()">Back</button>
+				</div>
+			</div>
+
+			<input type="number" placeholder="insert" id="insertInput" class="inp"/>
+			<button id="btnInsert" class="click">Insert</button>
+
+		</div>
+
+		<div class="two">
+			<input type="number" placeholder="search" id="searchInput" class="inp" />
+			<button id="btnSearch" class="click">Search</button>
+
+			<input type="number" placeholder="delete" id="deleteInput" class="inp" />
+			<button id="btnDelete" class="click">Delete</button>
+		</div>
+
+		<div class="three">
+			<button id="swap"><img src="swap.png" id="logo"></button>
+		</div>
+	</header>
+
+
+		<div class="sllbox">	
+			<div class="ons">
+				<div  class="linked-list-container" id="linked-list-container"></div>
+			</div>
+		</div>
+
+
+<header id="content">
+	<div class="defin">
+
+
+		<div id="img">
+			<img src="singly.png" id="example">
+		</div>
+
+
+		<div id="theory">
+
+			<h1 id="heading">Linked list</h1>
+
+			<p id="para">
+				Singly Linked List is a type of linked list where each node has two parts: data and next pointer. The data part stores the information and the next pointer points to the next node of the linked list. The next pointer of the last node stores null as it is the last node of the linked list and there is no next node. Traversal of items can be done in the forward direction only due to the linking of every node to its next node.
+
+
+			</p>
+
+		</div>
+	</div>
+
+	<div class="programm">
+		<textarea name="code" id="code"></textarea>
+	</div>
+</header>
+	
+
+
+
+
+
+	<script src="code.js"></script>
+</body>
+
+</html>
+
+<script src="script.js"></script>

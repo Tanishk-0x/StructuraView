@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Data Structure Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- //--------------------------------------------------------- -->
+
+    <header id="header">
+        <h1>Set Visualization</h1>
+    </header>
+
+    <header id="panel">
+
+
+        <div class="operand">
+
+            <button id="back" onclick="window.history.back()">Back</button>
+
+
+            <div class="input-container">
+                <input id="value-input" type="number" placeholder="Enter value">
+            </div>
+
+            <div id="screen"></div>
+        </div>
+
+        <div class="operations">
+            <button id="add-btn" class="btn">Add</button>
+            <button id="get-btn" class="btn">Get</button>
+            <button id="get-smaller-btn" class="btn">Smaller</button>
+            <button id="get-greater-btn" class="btn">Greater</button>
+            <button id="delete-btn" class="btn">Delete</button>
+        </div>
+
+
+
+    </header>
+
+
+
+
+    <div class="container">
+        <div class="set"></div>
+        
+        
+    </div>
+
+
+
+
+    <header id="main">
+
+        <div class="theory">
+            <div class="defin">
+
+                <h2 id="h2">
+                    What is set?
+                </h2>
+
+                <p id="para">
+                    In computer science, a set data structure is defined as a data structure that stores a collection of distinct elements.
+It is a fundamental Data Structure that is used to store and manipulate a group of objects, where each object is unique . The Signature property of the set is that it doesn’t allow duplicate elements.
+                </p>
+
+            </div>
+            <div class="example">
+                <p id="para">
+                    <span style="color: rgb(128, 0, 255);">1. Unordered-Set : </span>
+
+                    An unordered set is an unordered associative container implemented using a hash table where keys are hashed into indices of a hash table so that the insertion is always randomized. All operations on the unordered set take constant time O(1) on an average which can go up to linear time O(n) in the worst case which depends on the internally used hash function, but practically they perform very well and generally provide a constant time lookup operation.
+<br>
+<br>
+                    <span style="color:  rgb(128, 0, 255) ;"> 2. Ordered_Set : </span>
+
+                    An Ordered set is the common set data structure we are familiar with. It is generally implemented using balanced BSTs and it supports O(log n) lookups, insertions and deletion operations.
+
+                </p>
+            </div>
+        </div>
+
+        <div class="code">
+
+            <textarea name="code" id="code">
+
+// How to add value to a set 
+
+    #include <iostream>     
+    #include <set>          
+    using namespace std;
+                       
+        int main () {
+                    
+            set<int> my_set;
+                    
+            // add values to the set
+            my_set.insert(10);
+            my_set.insert(30);
+            my_set.insert(20);
+            my_set.insert(50);
+            my_set.insert(40);
+            my_set.insert(50);
+                        
+        // print the set elements
+
+            for (int i : my_set) {
+                cout << i << "  ";
+            }
+                        
+            return 0;
+        }
+
+        // output = 10  20  30  40  50  
+
+//---------------------------------------------------------
+// Check if element exist in a set 
+
+    #include <iostream>     
+    #include <set>          
+    using namespace std;
+       
+    int main () {
+    
+        set<int> my_set;
+    
+        // add values to the set
+        my_set.insert(10);
+        my_set.insert(30);
+        my_set.insert(20);
+        my_set.insert(50);
+        my_set.insert(40);
+        my_set.insert(50);
+        
+        // check if 40 exists ..
+
+        int num = 40;
+        if(my_set.count(num) == 1) {
+            cout << num << " exists." << endl;
+        } else {
+            cout << num << " doesn't exist." << endl;
+        }
+
+        
+        // check if 60 exists ..
+
+        num = 60;
+        if(my_set.count(num) == 1) {
+            cout << num << " exists." << endl;
+        } else {
+            cout << num << " doesn't exist." << endl;
+        }
+        
+        return 0;
+    }
+
+    output : 
+        40 exists.
+        60 doesn't exist.
+
+
+//---------------------------------------------------------
+// Delete element from a set .. 
+
+    #include <iostream>     
+    #include <set>          
+    using namespace std;
+       
+    int main () {
+    
+        set<int> my_set = {10, 20, 30, 40};
+        
+        // set before deletion ..
+        cout << "The set before deletion: ";
+        for (int i : my_set) {
+            cout << i << "  ";
+        }
+    
+        // delete values from the set .. 
+        my_set.erase(10);
+        my_set.erase(20);
+        
+
+        // set after deletion .. 
+        cout << "\nThe set after deletion: ";
+        for (int i : my_set) {
+            cout << i << "  ";
+        }
+    
+        // delete all elements from the set
+        my_set.clear();
+    
+
+        // set after clearing all elements
+        cout << "\nThe set after clearing all elements: ";
+        for (int i : my_set) {
+            cout << i << "  ";
+        }
+        
+        return 0;
+    }
+
+    output : 
+        The set before deletion: 10  20  30  40  
+        The set after deletion: 30  40
+        The set after clearing all elements: 
+
+
+//---------------------------------------------------------
+// empty and size checking .. 
+
+    #include <iostream>     
+    #include <set>          
+    using namespace std;
+       
+    int main () {
+    
+        set<int> my_set = {10, 20, 30};
+    
+        // set before clear ..
+        cout << "The set before clear: ";
+        for (int i : my_set) {
+            cout << i << "  ";
+        }
+        
+
+        // check if the set is empty ..
+        cout << "\nEmpty: " << my_set.empty() << endl;
+    
+
+        // check the size of the set ..
+        cout << "Size: " << my_set.size() << endl;
+        
+
+        // clear values from the set ..
+        my_set.clear();
+        
+
+        // set after clear ..
+        cout << "\nThe set after clear: ";
+        for (int i : my_set) {
+            cout << i << "  ";
+        }
+        
+        // use the capacity methods again
+        cout << "\nEmpty: " << my_set.empty() << endl;
+        cout << "Size: " << my_set.size() << endl;
+    
+        return 0;
+    }
+
+    output : 
+        The set before clear: 10  20  30  
+        Empty: 0
+        Size: 3
+
+        The set after clear: 
+        Empty: 1
+        Size: 0
+            </textarea>
+        </div>
+
+
+    </header>
+
+
+    <!-- //--------------------------------------------------------- -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>

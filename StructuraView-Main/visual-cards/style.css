@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+*{
+   font-family: 'Karla';
+}
+
+body{
+   background: #F4F5FA;
+   background-color: rgb(32, 1, 59);
+   background-color: black;
+}
+
+body::-webkit-scrollbar{
+   display: none;
+}
+
+#back{
+   background-color: black;
+   border: 1px solid #9000ff;
+   color: #9000ff;
+   height: 34px;
+   width: 70px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.flex-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.card{
+   background: #FFF;
+   background-color: #22004f;
+   background-color: black;
+   width: 250px;
+   margin: 20px;
+   box-shadow: 0px 0px 20px rgba(0,0,0,0.05);
+   box-sizing: border-box;
+   padding: 20px;
+   border-radius: 5px;
+   border: 1px solid #9000ff;
+   /* border: 1px solid rgb(128, 0, 255); */
+}
+
+.img{
+   height: 200px;
+   width: 100%;
+   border-radius: 5px;
+   background-size: cover;
+}
+
+@media (min-width: 1100px) {
+   
+   #back{
+      margin-right: 50px;
+   }
+
+}
+
+#card-img{
+    height: 200px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+
+#a{
+   padding: 10px;
+   width: 100%;
+   display: block;
+   text-align: center;
+   background: #333EFF20;
+   box-sizing: border-box;
+   border-radius: 4px;
+   color: #333eFF;
+   text-decoration: none;
+   font-size: 17px;
+   color: white;
+   margin-top: 5px;
+}
+
+
+
+#header{
+   background-color: #000000;
+   height: 70px;
+   font-size: 28px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #f7f7f7;
+   border: 1px solid #9000ff;
+}
+
+@media (max-width: 590px) {
+   
+   #header{
+      height: 52px;
+      font-size: 22px;
+   }
+
+   #header p {
+      margin-left: 10px;
+   }
+
+   #back{
+      margin-left: 14px;
+      width: 68px;
+   }
+
+}
+

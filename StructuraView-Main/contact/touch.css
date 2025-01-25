@@ -1,0 +1,141 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient(#ffdad5 , #fff7f9); */
+    color: white;
+    font-family: sans-serif;
+    /* background-image: url(assets/bgcnt.jpg) ; */
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cntact {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    width: 450px;
+    margin-top: 140px;
+    
+}
+
+.cntact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+@media (max-width: 390px) {
+    
+    .cntact{
+        margin-top: 90px;
+        border: none;
+        background-color: black;
+    }
+
+    body{
+        background-color: black;
+    }
+
+}
+
+
+.cntact-title h2{
+    font-weight: 600;
+    color:  #9000ff;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.cntact-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background: #9000ff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.cntact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color:  #9000ff;
+    border-radius: 50px;   
+    background-color:  #9000ff;
+}
+
+.cntact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.cntact-inputs:focus {
+    border: 2px solid #9000ff;
+}
+
+.cntact-inputs::placeholder {
+    color: #ffffff;
+}
+
+.cntact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px ;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color:  #9000ff;
+    transition: 0.5s;
+}
+
+.cntact-left button:hover {
+    border: 1px solid  #9000ff;
+    color:  #9000ff;
+    background-color: black;
+}
+
+
+.cntact-left button img {
+    height: 15px;
+}
+
+.cntact-right img{
+    width: 800px;
+    margin-bottom: 200px;
+}
+
+.cntact-inputs{
+    color: white;
+}
+
+
+
+/* // -------------- media queries ---------------------  */
+
+@media (max-width: 800px) {
+    .cntact-inputs {
+        width: 80vw;
+    }
+
+    .cntact-right {
+        display: none;
+    }
+}

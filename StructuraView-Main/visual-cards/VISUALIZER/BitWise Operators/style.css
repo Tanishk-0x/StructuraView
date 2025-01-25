@@ -1,0 +1,371 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+#input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 80px;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#result {
+    font-size: 20px;
+    background-color: orangered;
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#header{
+    background-color: rgb(0, 0, 0);
+    color: #6f00ff;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #6f00ff;
+}
+
+#panel{
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.one{
+    background-color: rgb(0, 0, 0);
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.two{
+    background-color: rgb(0, 0, 0);
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.three{
+    background-color: rgb(0, 0, 0);
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+#result{
+    background-color: rgb(0, 0, 0);
+    height: 55px;
+    width: 200px;
+    color: #6f00ff;
+    border: 1px solid #6f00ff;
+    font-size: 20px;
+    border-radius: 4px;
+    color: white;
+}
+
+#back{
+    background-color: black;
+    border: 1px solid #6f00ff;
+    border-radius: 6px;
+    color: #6f00ff;
+    height: 35px;
+    width: 70px;
+}
+
+.twos{
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px; 
+}
+
+.click{
+    background: linear-gradient(to right , rgb(115, 0, 255) , rgb(192, 123, 241) );
+    border-radius: 6px;
+    width: 70px;
+    height: 35px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.click:hover{
+    background: linear-gradient(to left , rgb(115, 0, 255) , rgb(192, 123, 241) );
+}
+
+#content{
+    background-color: rgb(0, 0, 0);
+    height: 630px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.defin{
+    background-color: #000000;
+    height: 610px;
+    width: 810px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+    height: 610px;
+    width: 800px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#code{
+    background-color: black;
+    border: 2px solid #6f00ff;
+    border-radius: 7px;
+    height: 600px ;
+    width: 790px;
+    color: #6f00ff;
+    font-size: 18px;
+
+}
+
+#code::-webkit-scrollbar{
+    display: none;
+}
+
+#imgs{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#truth{
+    height: 295px;
+    width: 795px;
+    border-radius: 4px;
+}
+
+#heading{
+    color: white;
+    font-size: 26px;
+    padding-left: 10px;
+
+}
+
+#para{
+    color: #6f00ff;
+    font-size: 21px;
+    padding-left: 10px;
+}
+
+#theory{
+    background-color: rgb(0, 0, 0);
+    margin-top: 10px;
+    height: 300px;
+    width: 800px;
+}
+
+#num1 , #num2 {
+    background-color: #aa73f1;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+}
+
+#num1::placeholder{
+    color: aliceblue;
+    padding-left: 10px;
+}
+
+#num2::placeholder{
+    color: aliceblue;
+    padding-left: 10px;
+}
+
+
+
+@media (max-width: 590px) {
+    
+    #header{
+        height: 50px;
+        font-size: 19px;
+        width: 340px;
+    }
+
+    #panel{
+        flex-direction: column;
+        height: 190px;
+        width: 340px;
+    }
+
+    .one{
+        width: 340px;
+    }
+
+    .two , .twos , .three{
+        width: 340px;
+    }
+
+    #num1 , #num2 {
+        width: 100px;
+        height: 24px;
+    }
+
+    .click{
+        height: 32px;
+    }
+
+    #content{
+        flex-direction: column;
+        width: 340px;
+        margin-top: 80px;
+        height: 500px;
+    }
+
+    .defin{
+        width: 340px;
+    }
+
+    .code{
+        width: 340px;
+        background-color: rgb(0, 0, 0);
+        margin-left: 0%;
+    }
+
+    #imgs{
+        width: 320px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #code{
+        width: 335px;
+        height: 340px;
+        font-size: 12px;
+        margin-left: 0%;
+        margin-top: 5px;
+        border: 1px solid #6f00ff;
+    }
+
+    #truth{
+        width: 330px;
+        height: 150px;
+    }
+
+    .defin{
+        font-size: 14px ; 
+        background-color: rgb(0, 0, 0);
+        margin-top: 0%;
+    }
+
+    #heading{
+        font-size: 18px;
+        height: 10px;
+    }
+
+    #para{
+        font-size: 12px;
+    }
+
+    #theory{
+        width: 340px;
+        height: 160px;
+        background-color: #000000;
+    }
+
+}
+
+.defin{
+    background-color: rgb(0, 0, 0);
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+}
+
+@media (min-width: 600px) {
+    
+
+    #content{
+        width: 100%;
+    }
+
+    .defin{
+        width: 45%;
+    }
+
+    .code{
+        width: 45%;
+        margin-left: 20px;
+    }
+
+    #code{
+        width: 95%;
+    }
+
+    #imgs{
+        width: 95%;
+    }
+
+    #truth{
+        width: 95%;
+    }
+
+    #theory{
+        width: 95%;
+    }
+
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="ref.css">
+</head>
+<body>
+
+    <header id="header">
+        Sorting Visualizer
+    </header>
+
+
+    <div class="container">
+        <div " class="controls">
+            <button id="back" onclick="window.history.back()">Back</button>
+
+            <label for="algorithm" style="font-size: 15px;">Select Sorting Algorithm:</label>
+            <select id="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="merge">Merge Sort</option>
+            </select>
+            <label for="speed">Speed:</label>
+            <select id="speed">
+                <option value="1">Slow</option>
+                <option value="2">Medium</option>
+                <option value="3">Fast</option>
+            </select>
+            <button class="btns" id="generate-array">Generate New Array</button>
+            <button class="btns" id="start-sorting">Start Sorting</button>
+
+            <button class="btns" id="stop-sorting">Stop Sorting</button>
+        </div>
+
+
+    </div>
+
+
+    <header id="items">
+
+        <div class="left">
+
+            <div class="define" >
+                
+            <div class="def">
+
+            <div id="defination">
+                Bubble sort is a sorting algorithm that starts from the first element of an array and compares it with the second element. If the first element is greater than the second, we swap them. It continues this process until the end of the array, with the largest elements “bubbling” to the top.
+            </div>
+                <div id="complexity">O(N^2)</div>
+            </div>
+            </div>
+
+                <div class="visual" >
+                    <div id="visualization" ></div>
+                </div>
+        </div>
+
+        <div class="code">
+            <textarea name="code" id="code"></textarea>
+        </div>
+
+
+    </header>
+
+
+    <script src="ref.js"></script>
+</body>
+</html>

@@ -1,0 +1,653 @@
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #fdfcfc;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+
+.text-boxes{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+.text-boxes .text-box{
+  height: 380px;
+  max-width: 660px;
+  width: 100%;
+  margin: 55px 0;
+}
+.text-boxes .text-box .topic{
+  font-size: 18px;
+  font-weight: 600;
+  color: #9000ff;
+  margin: 4px;
+}
+.text-boxes .text-box textarea{
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #9000ff;
+  border-radius: 8px;
+  background: #e7edfe;
+}
+.text-box textarea::-webkit-scrollbar{
+  display: none;
+}
+.text-boxes .text-box button{
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #1b3d9a;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.text-boxes .text-box button:hover{
+  background: #bec0c5;
+}
+@media (max-width: 500px) {
+  .text-boxes .text-box button{
+    width: 100%;
+  }
+}
+
+.out {
+  background-color: rgb(0, 0, 0) ; 
+  height: 90px ; 
+  width: 300px ; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+
+
+
+
+.scrollbar {
+  width: 250px;
+  /* height: 300px; */
+  height: 85px;
+  background-color: rgb(0, 0, 0);
+  overflow-y: scroll; /* To get vertical scrollbar */
+  float: left;
+}
+.content {
+  height: 450px;
+}
+
+/* Override default scrollbar */
+#ex3::-webkit-scrollbar {
+  width: 16px;
+  background-color: #000000;
+}
+/* Customize Thumb */
+#ex3::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 10px;
+}
+#ex3::-webkit-scrollbar-thumb:hover {
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+#ex3::-webkit-scrollbar-thumb:active {
+  background-color: #000000;
+  border: 1px solid #000000;
+}
+/* Customize Track */
+#ex3::-webkit-scrollbar-track {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgb(0, 0, 0) inset;
+}
+
+
+#btn1 , #btn2 , #btn3 , #btn4 , #btn5 , #btn6 , #btn7 , #btn8 , #btn9 , #btn10 , #btn11 , #btn12 , #btn13 , #btn14, #btn15, #btn16, #btn17, #btn18, #btn19, #btn20, #btn21, #btn22 , #btn23 , #btn24 , #btn25 , #btn26 , #btn27 , #btn28 , #btn29 , #btn30 , #btn31 , #btn32 , #btn33 , #btn34 , #btn35 , #btn36 , #btn37, #btn38 , #btn39 , #btn40 , #btn41 , #btn42 , #btn43   {
+  background-color:  #9000ff;
+  color: white; 
+  width: 220px ; 
+  height: 50px ; 
+  font-size: 17px ; 
+  cursor: pointer ; 
+  border-radius: 8px;
+  border: 2px solid black;
+}
+
+
+.copybtn{
+  background-color: rgb(0, 0, 0) ; 
+  height: 90px ;
+  width: 120px ;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.header{
+  display: flex ; 
+  justify-content: flex-end ; 
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: red;
+}
+
+#codeh1{
+  color:  #9000ff ;
+  margin-right: 10px;
+}
+
+#copykrbhai {
+  background-color: #9000ff; 
+  color: white;
+  padding: 5px 18px;
+  border: none; 
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 34px;
+  width: 70px;
+  transition: 0.5s;
+}
+
+#copykrbhai:hover{
+  background-color: rgb(21, 21, 21);
+  border: 1px solid #9000ff;
+  color: #9000ff;
+}
+
+#textarea1{
+  font-size: 14px;
+}
+
+#code{
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#textarea1{
+  background-color: black;
+  border: 1px solid #9000ff;
+  color: #9000ff;
+  height: 690px;
+  width: 1600px;
+  border-radius: 7px;
+  padding-left: 100px;
+  font-size: 20px;
+}
+
+.header{
+  background-color: red;
+}
+
+
+@media (min-width: 800px) {
+  /* #codeh1{
+    margin-right: 530px ; 
+    font-size: 50px ; 
+    font-style: oblique ; 
+  } */
+}
+
+@media (max-width: 590px) {
+
+
+  #textarea1{
+    font-size: 12px;
+  }
+
+  .header{
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+  }
+
+
+  
+#code{
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#textarea1{
+  background-color: black;
+  border: 1px solid #9000ff;
+  color: #9000ff;
+  height: 490px;
+  width: 340px;
+  border-radius: 7px;
+  padding-left: 10px;
+  font-size: 10px;
+}
+
+#textarea1::-webkit-scrollbar{
+  display: none;
+}
+
+#code::-webkit-scrollbar{
+  display: none;
+}
+
+}
+
+.wrap{
+  background-color: rgb(0, 0, 0);
+}
+
+.header{
+  background-color: rgb(0, 0, 0)
+}
+
+
+.out{
+  background-color: rgb(0, 0, 0) ; 
+}
+
+.header{
+  background-color: rgb(0, 0, 0) ; 
+  display: flex ; 
+  justify-content: center ; 
+  align-items: center ; 
+}
+
+#textarea1::-webkit-scrollbar{
+  display: none
+}
+
+#header{
+  background-color: rgb(0, 0, 0) ;
+  width: 340px;
+  display: flex ; 
+  justify-content: center ; 
+  align-items: center ; 
+  flex-direction: row ; 
+  width: 100% ; 
+  margin-top: 10px;
+}
+
+.once{
+  background-color: rgb(0, 0, 0);
+  width: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-left: 0%;
+}
+
+.twos{
+  background-color: rgb(0, 0, 0);
+  width: 540px;
+  display: flex ; 
+  justify-content: center;
+  align-items: center;
+
+}
+
+#back{
+  border: 1px solid #9000ff;
+  color: #9000ff;
+  background-color: black;
+  height: 34px;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+#heading{
+  font-size: 60px;
+  color: #9000ff;
+}
+
+@media (min-width: 1100px) {
+  
+  .once{
+    margin-right: 500px;
+  }
+
+  #heading{
+    font-size: 70px;
+  }
+
+}
+
+@media (max-width: 590px) {
+  
+  #header{
+    flex-direction: column ; 
+  }
+
+  .once{
+    height: 60px ; 
+    font-size: 50px ; 
+    width: 340px;
+  }
+
+  #heading{
+    font-size: 40px;
+  }
+
+  #back{
+    margin-left: 10px
+  }
+
+  .twos{
+    width: 340px ; 
+  }
+
+  .content button {
+    margin-left: 10px ; 
+  }
+
+  .out{
+    margin-top: 4px
+  }
+
+  #btn1 , #btn2 , #btn3 , #btn4 , #btn5 , #btn6 , #btn7 , #btn8 , #btn9 , #btn10 , #btn11 , #btn12 , #btn13 , #btn14, #btn15, #btn16, #btn17, #btn18, #btn19, #btn20, #btn21, #btn22 , #btn23 , #btn24 , #btn25 , #btn26 , #btn27 , #btn28 , #btn29 , #btn30 , #btn31 , #btn32 , #btn33 , #btn34 , #btn35 , #btn36 , #btn37, #btn38 , #btn39 , #btn40 , #btn41 , #btn42 , #btn43   {
+
+    height: 40px ; 
+    font-size: 15px ; 
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  background: #fdfcfc;
+}
+.text-boxes{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+.text-boxes .text-box{
+  height: 380px;
+  max-width: 660px;
+  width: 100%;
+  margin: 55px 0;
+}
+.text-boxes .text-box .topic{
+  font-size: 18px;
+  font-weight: 600;
+  color: #265df2;
+  margin: 4px;
+}
+.text-boxes .text-box textarea{
+  height: 600px;
+  width: 100%;
+  padding: 30px;
+  font-size: 25px;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #7300ff;
+  border-radius: 8px;
+  background: #000000;
+  color: rgb(114, 0, 220);
+  
+}
+
+.text-box textarea::-webkit-scrollbar{
+  display: none;
+}
+.text-boxes .text-box button{
+  height: 45px;
+  width: 155px;
+  color: #fff;
+  background: #7300ff;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 8px 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.text-boxes .text-box button:hover{
+  background: #ffffff;
+  color: #7300f7;
+  border: 2px solid #7300f7;
+}
+@media (max-width: 400px) {
+  .text-boxes .text-box button{
+    width: 100%;
+  }
+}
+
+.main {
+  background-color: yellow;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: row; 
+}
+
+#head{
+  background-color: rgb(0, 0, 0);
+  height: 120px;
+}
+
+.one {
+  background-color: red;
+  width: 850px;
+
+}
+
+.two {
+  background-color: blue;
+  width: 850px;
+}
+
+.text-boxes{
+  height: 850px;
+}
+
+/* //----------------------------------------------------------- */
+
+body{
+    background-color: rgb(0, 0, 0) ; 
+}
+
+.wrap{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.wrap > * {
+    padding: 8px;
+    margin: 8px;
+    flex: 1 100%;
+}
+
+.header{
+    height: 110px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid gray;
+}
+
+/* .main{
+    height: 700px;
+    width: 600px;
+    background-color: greenyellow;
+} */
+
+.side-left{
+    width: 600px;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid gray;
+}
+
+.side-right{
+    width: 600px;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid gray;
+}
+
+
+
+@media all and (min-width: 600px){
+    .side{
+        flex: 1 ;
+    }
+}
+
+@media all and (min-width: 800px){
+    .main{
+        flex: 3;
+    }
+    .main{
+        order: 2;
+    }
+    .side-left{
+        order: 1;
+    }
+    .side-right{
+        order: 2;
+    }
+    .footer{
+        order: 4;
+    }
+}
+
+.img{
+    background-color: rgb(151, 151, 65);
+    height: 600px;
+    width: 200px;
+    margin-top: 55px;
+    margin-left: 100px;
+}
+
+#HTMLButton , #btn {
+    background-color: rgb(153, 0, 255);
+    height: 35px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 400px){
+    .img {
+        margin: 10px;
+        margin-bottom: 0%;
+        width: 320px;
+        height: 220px;
+    }
+
+    .side-left{
+      height: 250px;
+    }
+}
+
+#tess {
+    color: white;
+    font-style: oblique;
+}
+
+@media (min-width: 900px) {
+
+  .img{
+    margin: 0%;
+    padding: 0%;
+    width: 200px;
+    height: 200px;
+  }
+  .side-left{
+    width: 300px;
+    height: 500px;
+    background-color: red;
+  }
+}
+
+

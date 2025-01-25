@@ -1,0 +1,417 @@
+
+body{
+    background-color: black;
+}
+
+.data-container{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(112, 0, 198);
+}
+
+.btns{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#header{
+    background-color: rgb(0, 0, 0);
+    color: rgb(110, 0, 212);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 2px solid gray;
+}
+
+.text{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 15px;
+    color: white;
+}
+
+
+#panel{
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clear , #random {
+    background: linear-gradient(to right , rgb(114, 0, 227) , rgb(177, 45, 225) );
+    border: none;
+    height: 30px;
+    width: 70px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#clear:hover{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to left ,  rgb(114, 0, 227) , rgb(177, 45, 225)  );
+    cursor: pointer;
+}
+
+#random:hover{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to left ,  rgb(114, 0, 227) , rgb(177, 45, 225)  );
+    cursor: pointer;
+}
+
+#list , #matrix {
+    background: linear-gradient(to right , rgb(114, 0, 227) , rgb(177, 45, 225) );
+    border: none;
+    height: 30px;
+    width: 70px;
+    margin-left: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#list:hover{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to left ,  rgb(114, 0, 227) , rgb(177, 45, 225)  );
+    cursor: pointer;
+}
+
+#matrix:hover{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to left ,  rgb(114, 0, 227) , rgb(177, 45, 225)  );
+    cursor: pointer;
+}
+
+
+.content{
+    background-color: rgb(0, 0, 0) ; 
+    height: 400px;
+    margin-top: 15px;
+}
+
+#code{
+    height: 100px;
+    width: 800px ; 
+    background-color: black;
+    color: blueviolet;
+    border: none;
+}
+
+#panel{
+    background-color: rgb(0, 0, 0);
+}
+
+.text{
+    background-color: rgb(0, 0, 0);
+    font-size: 10px;
+}
+
+.change{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first{
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;    
+}
+
+#back{
+    background-color: black;
+    border: 1px solid rgb(115, 0, 255);
+    color: rgb(115, 0, 255);
+    height: 35px;
+    width: 70px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#header{
+    border: 1px solid rgb(149, 0, 255);
+}
+
+#items{
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.defin{
+    background-color: rgb(0, 0, 0);
+    height: 590px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+    height: 590px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#code{
+    border: 1px solid rgb(128, 0, 255);
+    color: rgb(128, 0, 255);
+    background-color: black;
+    height: 585px;
+    width: 790px;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.imgs{
+    background-color: rgb(0, 0, 0);
+    height: 280px;
+    width: 790px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heaaading , #comp{
+    font-size: 25px;
+    margin-left: 10px;
+    color: white;
+}
+
+#para , #para1{
+    margin-left: 10px;
+    color: rgb(128, 0, 255);
+}
+
+
+.theory{
+    background-color: rgb(0, 0, 0);
+    height: 300px ;
+    width: 790px;
+    font-size: 15px;
+}
+
+#code::-webkit-scrollbar{
+    display: none;
+}
+
+#graph-img{
+    height: 270px;
+    width: 780px;
+}
+
+/* //--------------------------------------------------------------- */
+
+@media (max-width: 590px) {
+ 
+    #header{
+        font-size: 16px;
+        height: 50px;
+    }
+
+    #items{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .theory , .defin , .code , .imgs {
+        width: 95%;
+        margin-left: 0%;
+    }
+
+    #code{
+        height: 350px;
+    }
+
+    .code{
+        height: 350px;
+    }
+
+    .btns{
+        width: 200px;
+        height: 38px;
+    }
+
+    .text{
+        height: 35px;
+    }
+
+    
+    #graph-img{
+        height: 200px;
+        width: 95%;
+    }
+
+    .imgs{
+        height: 210px;
+        margin-top: 20px;
+    }
+
+    #panel{
+        height: 85px;
+        flex-direction: column;
+    }
+
+    .theory{
+        font-size: 10px;
+        height: 240px;
+    }
+
+    .defin{
+        height: 460px;
+    }
+
+    #heaaading , #comp{
+        font-size: 15px;
+    }
+
+    .first , .change{
+        height: 40px;
+    }
+
+    #code{
+        width: 340px;
+        font-size: 11px;
+    }
+
+    .text{
+        font-size: 6px;
+        height: 30px;
+    }
+
+}
+
+#items{
+    background-color: rgb(0, 0, 0);
+}
+
+.defin{
+    background-color: rgb(0, 0, 0);
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+}
+
+
+@media (min-width: 1100px) {
+    #code{
+        width: 1650px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    
+    #items{
+        flex-direction: column;
+        /* margin-top: 300px; */
+        width: 100%;
+    }
+
+    .defin , .code{
+        width: 90%;
+    }
+
+    .theory , .imgs{
+        width: 95%;
+    }
+
+    #graph-img{
+        width: 95%;
+    }
+
+    .imgs{
+        margin-top: 20px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    
+    #items{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .defin{
+        width: 47%;
+    }
+
+    .code{
+        width: 47%;
+    }
+
+    #code{
+        width: 95%;
+    }
+
+    .theory{
+        width: 95%;
+    }
+
+    .imgs{
+        width: 95%;
+    }
+
+    #graph-img{
+        width: 95%;
+    }
+
+}
+
+@media (min-width: 590px) {
+    
+
+    #items{
+        margin-top: 300px;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    
+    #items{
+        margin-top: 0%;
+    }
+
+    .imgs{
+        margin-top: 20px;
+    }
+
+}

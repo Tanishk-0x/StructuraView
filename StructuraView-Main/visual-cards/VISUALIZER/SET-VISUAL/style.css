@@ -1,0 +1,426 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.element {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #6a00ff;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.element-value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.operations {
+    margin-top: 20px;
+}
+
+
+
+
+.input-container {
+    margin-top: 0px;
+}
+
+input[type="number"] {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+#header{
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    color: rgb(115, 8, 230);
+    font-size: 24px;
+    border: 2px solid gray;
+}
+
+#panel{
+    margin-top: 5px;
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background: linear-gradient(to right , rgb(105, 5, 246) , rgb(152, 101, 234) );
+    color: white;
+    border: none;
+    height: 30px;
+    width: 70px;
+    margin-top: 0%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover{
+    background: linear-gradient(to left , rgb(105, 5, 246) , rgb(152, 101, 234) );
+}
+
+.operations{
+    background-color: rgb(0, 0, 0);
+    height: 38px;
+    width: 470px;
+}
+
+.operand{
+    margin-top: 5px;
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    width: 180px;
+    border: 1px solid rgb(119, 0, 255);
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(106, 0, 255);
+}
+
+.input-container{
+    margin-left: 10px;
+}
+
+.container{
+    background-color: rgb(0, 0, 0);
+    margin-top: 10px;
+    height: 150px;
+    overflow: hidden;
+    border: 2px solid rgb(102, 0, 255);
+}
+
+#add-btn{
+    margin-left: 38px;
+}
+
+.content{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 380px;
+}
+
+#one{
+    background-color: rgb(0, 0, 0);
+    height: 180px;
+}
+
+#two{
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    margin-top: 0%;
+}
+
+#three{
+    background-color: #000000;
+    height: 100px;
+}
+
+#opara{
+    color: #6a00ff;
+    font-size: 28px;
+    margin-left: 10px;
+    opacity: 0%;
+}
+
+#tpara{
+    color: #6a00ff;
+    font-size: 26px;
+    margin-left: 10px;
+    opacity: 0%;
+}
+
+#imgs{
+    height: 60px;
+    width: 340px;
+    opacity: 0%;
+}
+
+#spn{
+    opacity: 0%;
+}
+/* //------------------------------------------------------------------------ */
+
+@media (max-width: 590px) {
+    
+    #header{
+        height: 50px;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    #h2{
+        margin-top: 10px;
+    }
+
+    .btn{
+        width: 60px;
+    }
+
+    #panel{
+        height: 100px;
+        flex-direction: column;
+    }
+
+    #add-btn{
+        margin-left: 28px;
+    }
+
+    .operations{
+        margin-top: 5px;
+        width: 370px;
+    }
+    
+    #opara{
+        font-size: 18px;
+    }
+
+    #tpara{
+        font-size: 16px;
+    }
+
+#tpara{
+    color: #6a00ff;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+
+}
+
+
+
+#header{
+    border: 1px solid rgb(128, 0, 255);
+}
+
+#main{
+    background-color: rgb(0, 0, 0);
+    height: 600px;
+    width: 100%;
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.theory{
+    background-color: rgb(0, 0, 0);
+    height: 580px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+    height: 580px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#code{
+    background-color: black;
+    color: #6a00ff;
+    border-radius: 7px;
+    height: 575px;
+    width: 790px;
+    border: 1px solid #6a00ff;
+    font-size: 18px;
+}
+
+#code::-webkit-scrollbar{
+    display: none;
+}
+
+.defin{
+    background-color: rgb(0, 0, 0);
+    height: 200px;
+    width: 790px;
+}
+
+.example{
+    background-color: rgb(0, 0, 0);
+    height: 490px;
+    width: 790px;
+}
+
+#h2{
+    color: #6a00ff;
+    font-size: 30px;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+
+#para{
+    color: white;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+#back{
+    background-color: #000000;
+    color: #6a00ff;
+    border: 1px solid #6a00ff;
+    height: 35px;
+    width: 70px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 590px) {
+
+    #main{
+        flex-direction: column;    
+    }
+
+    .back{
+        margin-top: 30px;
+    }
+
+    .container{
+        margin-top: 25px;
+        border: 2px solid #6a00ff;
+    }
+
+    #screen{
+        width: 120px;
+    }
+
+    .theory , .code , .defin , .example{
+        width: 100%;
+    }
+
+    .defin{
+        height: 180px;
+    }
+
+    .operand{
+        width: 340px;
+    }
+
+    .example{
+        height: 380px;
+    }
+
+
+    #code{
+        width: 340px;
+        height: 340px;
+        font-size: 12px;
+        width: 95%;
+    }
+
+    .code{
+        height: 380px;
+        margin-top: 28px;
+        width: 100%;
+    }
+
+    #main{
+        height: 720px;
+    }
+
+    .theory{
+        height: 390px;
+        margin-top: 40px;
+    }
+
+    #para{
+        font-size: 14px;
+        margin-left: 8px;
+        color: white;
+    }
+
+
+    
+}
+
+
+#main{
+    background-color: rgb(0, 0, 0);
+}
+
+@media (min-width: 800px) {
+    
+    #main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .theory{
+
+        width: 47%;
+    }
+
+    .code{
+        width: 47%;
+    }
+
+    .defin , .example{
+        width: 95%;
+    }
+
+    .defin{
+        margin-top: 14px;
+    }
+
+    .code{
+        background-color: red;
+        margin-left: 15px;
+    }
+
+}

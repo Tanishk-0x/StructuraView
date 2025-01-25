@@ -1,0 +1,230 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#header{
+    background-color: #000000;
+    height: 80px;
+    width: 100%;
+    font-size: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9000ff;
+    border: 1px solid #9000ff;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+#header p {
+    margin-left: 20px;
+}
+
+#back{
+    color: rgb(128, 0, 255);
+    border: 1px solid rgb(128, 0, 255);
+    height: 34px;
+    width: 70px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#back:hover{
+    background-color: rgb(170, 170, 170);
+}
+
+#main{
+    width: 100%;
+    height: 100px;
+    background-color: lightyellow;
+    margin-top: 10px;
+}
+
+#charts{
+    margin-top: 10px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.chart1{
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart2{
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart3{
+    background-color: rgb(255, 255, 255);
+    height: 440px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.chart4{
+    background-color: #ffffff;
+    height: 330px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.chart5{
+    background-color: rgb(255, 255, 255);
+    height: 330px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.chart6{
+    background-color: rgb(255, 255, 255);
+    height: 540px;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#img1{
+    height: 590px;
+    width: 1000px ;
+}
+
+#img2{
+    height: 390px;
+    width: 1000px ;
+}
+
+#img3{
+    height: 430px;
+    width: 1000px;
+}
+
+#img4{
+    width: 1000px;
+    height: 320px;
+}
+
+#img5{
+    width: 1000px;
+    height: 320px;
+}
+
+#img6{
+    width: 1000px;
+    height: 530px;
+}
+
+
+
+@media (max-width: 590px) {
+    
+    #header{
+        height: 50px;
+        font-size: 22px;
+    }
+
+    #header p{
+        margin-left: 8px;
+    }
+
+    #back{
+        height:29px; 
+        width: 60px;
+        margin-left: 1px;
+    }
+
+    #charts{
+        width: 350px;
+    }
+
+    .chart1{
+        width: 340px;
+        height:290px;
+    }
+
+    .chart2{
+        width: 340px;
+        height: 190px;
+    }
+
+    .chart3{
+        height: 210px;
+        width: 340px;
+    }
+
+    .chart4{
+        width: 340px;
+        height: 140px;
+    }
+
+    .chart5{
+        width: 340px;
+        height: 140px; 
+    }
+
+    .chart6{
+        width: 340px;
+        height: 210px;
+    }
+
+    #img1{
+        width: 330px;
+        height: 280px;
+    }
+
+    #img2{
+        width: 330px;
+        height: 180px;
+    }
+
+    #img3{
+        width: 340px;
+        height: 200px;
+    }
+
+    #img4{
+        height: 130px;
+        width: 340px;
+    }
+  
+    #img5{
+        height: 130px;
+        width: 340px;
+    }
+
+    #img6{
+        width: 340px;
+        height: 200px;
+    }
+
+
+
+}

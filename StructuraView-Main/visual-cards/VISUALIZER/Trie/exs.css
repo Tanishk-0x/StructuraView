@@ -1,0 +1,271 @@
+body{
+    background-color: black;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.Canvas{
+    background-color: rgb(0, 0, 0);
+    height: 740px;
+    width: 780px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.Canvas {
+    width: 100%;
+    /* flex: 1 1 auto; */
+    background-color: #000000;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 1px solid rgb(123, 0, 255);
+  }
+  
+
+.button{
+    background: linear-gradient(to right , rgb(115, 0, 255) , rgb(180, 137, 248) );
+    color: white;
+    font-size: 15px;
+    height: 35px;
+    width: 68px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.button:hover{
+    background: linear-gradient(to left , rgb(115, 0, 255) , rgb(180, 137, 248) );
+}
+
+#DeleteNodeField , #InsertNodeField{
+    background-color: rgb(176, 101, 246);
+    height: 35px;
+    width: 140px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#DeleteNodeField::placeholder{
+    padding-left: 10px;
+    color: white;
+}
+
+#InsertNodeField::placeholder{
+    padding-left: 10px;
+    color: white;
+}
+
+#panel{
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one , .two , .zero {
+    height: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one{
+    background-color: rgb(0, 0, 0);
+}
+
+.two{
+    background-color: rgb(0, 0, 0);
+}
+
+.zero{
+    background-color: rgb(0, 0, 0);
+    width: 150px;
+}
+
+#back{
+    border: 1px solid #6f00ff;
+    color: #6f00ff;
+    height: 35px;
+    width: 70px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #000000;
+}
+
+
+#header{
+    background-color: black;
+    border: 2px solid rgb(128, 0, 255);
+    color: rgb(132, 0, 255);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.content{
+    background-color: rgb(0, 0, 0);
+    height: 750px;
+    width: 800px;
+    display: flex ; 
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.theory{
+    background-color: rgb(0, 0, 0);
+    height: 740px;
+    width: 900px;
+}
+
+#comp{
+    background-color: rgb(0, 0, 0);
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row row-reverse;
+}
+
+
+#code{
+    height: 740px;
+    width: 1800px;
+    /* border: 2px solid  rgb(132, 0, 255); */
+    border: none;
+    background-color: black;
+    color: rgb(132, 0, 255);
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+#code::-webkit-scrollbar{
+    display: none;
+}
+
+#warning{
+    background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 990px) {
+    
+    #panel{
+        opacity: 0%;
+        width: 960px;
+        height: 100px;
+        
+    }
+
+    #comp{
+        background-color: #000000;
+    }
+
+    #DeleteNodeField , #InsertNodeField{
+        height: 0%;
+        width: 0%;
+        opacity: 0%;
+    }
+
+    #header{
+        width: 360px;
+        height: 10px;
+    }
+
+    .Canvas{
+        height: 10px;
+        width: 10px;
+        opacity: 0%;
+    }
+
+    .theory{
+        height: 10px;
+        width: 10px;
+        opacity: 0%;
+        background-color: #000000;
+    }
+
+    #code{
+        width: 360px;
+        opacity: 0%;
+        height: 100px;
+        background-color: orange;
+    }
+
+    #header{
+        color: black;
+        border: none;
+    }
+    
+    #warning{
+        margin-top: 0%;
+        background-color: rgb(0, 0, 0);
+        height: 250px;
+        font-size: 30px;
+        color: rgb(140, 0, 255);
+        padding-left: 30px;
+    }
+
+    #text {
+        font-family: monospace;
+        animation: color-change 4s infinite;
+      }
+      
+      @keyframes color-change {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+      }
+
+
+}
+
+
+h2{
+    color: aliceblue;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#has{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+p{
+    color: #6f00ff;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#spn{
+    color: azure;
+    margin-left: 20px;
+}
+
+#sph{
+    color: azure;
+    margin-left: 20px;
+}

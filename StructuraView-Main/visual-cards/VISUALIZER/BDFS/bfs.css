@@ -1,0 +1,286 @@
+
+body{
+    background-color: black;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+#header{
+    background-color: rgb(0, 0, 0);
+    height: 100px;
+    color: rgb(144, 0, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    border: 1px solid rgb(106, 0, 255);
+
+}
+
+#switch{
+    background: linear-gradient(to right , rgb(123, 0, 255) , rgb(171, 84, 232));
+    color: white;
+    border: none ; 
+    height: 34px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 5px;  
+    margin-left: 30px;
+    margin-right: 24px;
+    font-size: 16px;
+}
+
+#heading{
+    margin-left: 24px;
+}
+
+#panel{
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#func{
+    background: linear-gradient(to right , rgb(123, 0, 255) , rgb(171, 84, 232));
+    color: white;
+    border: none ; 
+    height: 34px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 5px;  
+    margin-left: 2px;
+    margin-right: 5px;  
+    font-size: 16px;
+}
+
+.data-container{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(113, 0, 211);
+}
+
+#start-button{
+    background: linear-gradient(to right , rgb(123, 0, 255) , rgb(171, 84, 232));
+    color: white;
+    border: none ; 
+    height: 34px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 5px;  
+    margin-left: 8px;
+    margin-right: 8px;  
+    font-size: 16px;
+}
+
+
+
+#back{
+    background-color: black;
+    border: 1px solid rgb(128, 0, 255);
+    color: rgb(128, 0, 255);
+    height: 35px;
+    width: 70px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 8px;
+    margin-right: 8px;
+
+}
+
+.button-top{
+    margin-left: 10px;
+}
+
+#start-button:hover{
+    background: linear-gradient(to left , rgb(123, 0, 255) , rgb(171, 84, 232));
+}
+
+#switch:hover{
+    background: linear-gradient(to left , rgb(123, 0, 255) , rgb(171, 84, 232));
+}
+
+#func:hover{
+    background: linear-gradient(to left , rgb(123, 0, 255) , rgb(171, 84, 232));
+}
+
+#unique{
+    background-color: greenyellow;
+}
+
+.comm{
+    color: rgb(62, 62, 62);
+}
+
+#bg{
+    background-color: blue;
+}
+
+
+
+
+.mx-auto{
+    /* border: 2px solid gray; */
+    color: rgb(112, 0, 210);
+}
+
+#define{
+    background-color: rgb(0, 0, 0);
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.one{
+    background-color: rgb(0, 0, 0);
+    height: 490px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+    height: 490px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#code{
+    height: 485px;
+    width: 790px;
+    background-color: black;
+    color: rgb(144, 0, 255);
+    border-radius: 7px;
+    font-size: 16px;
+    border: 1px solid rgb(128, 0, 255);
+}
+
+#code::-webkit-scrollbar{
+    display: none;
+}
+
+.theory{
+    background-color: rgb(0, 0, 0);
+    width: 790px;
+    height: 480px;
+}
+
+#heaaading{
+    font-size: 35px;
+    color: white;
+}
+
+#para{
+    font-size: 28px;
+    color: rgb(128, 0, 255);
+    margin-left: 10px;
+}
+
+
+/* //------------------------------------------------------------------- */
+
+@media (max-width: 590px) {
+    
+    #header{
+        font-size: 14px;
+        height: 65px;
+    }
+
+    .data-container{
+        height: 300px;
+    }
+
+    #define{
+        flex-direction: column;
+    }
+
+    .one{
+        width: 340px;
+    }
+
+    .code{
+        width: 340px;
+    }
+
+    #code{
+        width: 340px;
+        height: 340px;
+        font-size: 10px;
+    }
+
+    .theory{
+        height: 140px;
+        margin-top: 0%;
+    }
+
+    #para{
+        font-size: 10px;
+    }
+
+    #heaaading{
+        font-size: 16px;
+        margin-top: 0%;
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    
+
+    #define{
+        flex-direction: column;
+        margin-top: 200px;
+    }
+
+    #dfs-th{
+        background-color: rgb(0, 0, 0);
+        height: auto;
+    }
+
+}
+
+@media (max-width: 590px) {
+    
+    #define{
+        margin-top: 0%;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+    
+    #define{
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #para{
+        font-size: 22px;
+    }
+
+    .one{
+        width: 45%;
+    }
+
+    .code{
+        width: 45%;
+        margin-left: 30px;
+
+    }
+
+
+}

@@ -1,0 +1,166 @@
+
+.ups{
+
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    border: 1px solid #9000ff;
+}
+
+#tab-menu-div{
+    background-color: rgb(0, 0, 0);
+}
+
+.tab{
+    background-color: rgb(0, 0, 0);
+}
+
+.tab-button{
+    background-color: rgb(0, 0, 0);
+}
+
+.tabcontent{
+    background-color: rgb(0, 0, 0);
+}
+
+.tab-content-heading{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    
+}
+
+#hero-content{
+
+    background-color: rgb(0, 0, 0);
+}
+
+#code{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#codee{
+    background-color: black;
+    border: 1px solid rgb(128, 0, 255);
+    color: rgb(128, 0, 255);
+    border-radius: 8px;
+    height: 590px;
+    width: 940px;
+    font-size: 18px;
+}
+
+#codee::-webkit-scrollbar{
+    display: none;
+}
+
+#types{
+    width: 800px;
+    height: auto;
+    margin-left: 60px;
+}
+
+#syntax-ty{
+    width: 800px;
+    height: auto;
+    margin-left: 60px;
+}
+
+#back{
+    border: 1px solid #9000ff;
+    color: #9000ff;
+    background-color: black;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 34px;
+    width: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 590px) {
+    
+    .ups{
+        width: 100%;
+        font-size: 23px;
+    }
+
+    .tab{
+        width: 340px;
+        margin-top: 0%;
+    }
+
+    #tab-menu-div{
+        width: 350px;
+    }
+
+    .tabcontent{
+        width: 340px;
+    }
+
+    .tab-content-heading{
+        width: 320px;
+        margin-left: 0%;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    #hero-content{
+        margin-left: 0px;
+        width: 330px;
+    }
+
+    #imghash , #imghash2 , #imghash3{
+        width: 320px;
+        height: auto;
+    }
+
+    #tab-menu-div{
+        background-color: rgb(0, 0, 0);
+        width: 340px;
+        margin-top: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #code{
+        width: 340px;
+        height:368px;
+    }
+
+    #codee{
+        width: 340px;
+        height: 360px;
+        font-size: 14px;
+    }
+
+    .encapImg{
+        width: 330px;
+        height: auto;
+    }
+
+    #types{
+        width: 330px;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    #syntax-ty{
+        width: 330px;
+        height: auto;
+        margin-left: 0px;
+    }
+
+    #back{
+        margin-left: 10px;
+    }
+
+
+
+}

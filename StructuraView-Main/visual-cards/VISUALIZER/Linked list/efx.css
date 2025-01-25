@@ -1,0 +1,441 @@
+
+body{
+    background-color: black;
+}
+
+#header{
+    background-color: rgb(0, 0, 0);
+    color: rgb(111, 0, 255);
+    border: 2px solid gray;
+    height: 80px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.inp{
+    background-color: rgb(177, 69, 239);
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.inp::placeholder{
+    color: white;
+    padding-left: 10px;
+}
+
+.click{
+    background: linear-gradient(to right , rgb(128, 0, 255) , rgb(200, 138, 248) );
+    border: none;
+    height: 33px;
+    width: 70px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.click:hover{
+    background: linear-gradient(to left , rgb(128, 0, 255) , rgb(200, 138, 248) );
+}
+
+
+#swap{
+    cursor: pointer;
+}
+
+#panel{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 80px;
+}
+
+.one{
+	background-color: rgb(0, 0, 0);
+	width: 340px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.two{
+	background-color: rgb(0, 0, 0);
+	width: 340px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.three{
+	background-color: rgb(0, 0, 0);
+	width: 200px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#insertInput{
+    width: 150px;
+}
+
+#searchInput , #deleteInput {
+    width: 90px;
+}
+
+.click{
+    width: 60px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.two{
+    margin-left: 10px;
+}
+
+.one{
+    margin-left: 10px;
+}
+
+#back{
+    background-color: black;
+    color: rgb(128, 0, 255);
+    border: 1px solid rgb(128, 0, 255);;
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.display{
+    background-color: rgb(0, 0, 0);
+    height: 48px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#screen{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    width: 100px ;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+
+.ons{
+    width: 360px;
+    height: 100px;
+}
+
+#visu{
+    background-color: rgb(0, 0, 0);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ons::-webkit-scrollbar {
+    display: none;
+  }
+
+
+#content{
+    background-color: #000000;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items:center ; 
+    flex-direction: row;
+}  
+
+#code{
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(136, 0, 255);
+    width: 800px;
+    height: 570px;
+    margin-left: 10px;
+    border-radius: 7px;
+    color:  rgb(136, 0, 255);
+    font-size: 24px;
+}
+
+.three{
+    background-color: #000000;
+    height: 50px;
+}
+
+
+.defin{
+    background-color: #000000;
+    height: 580px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.programm{
+    background-color: rgb(0, 0, 0);
+    height: 580px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img{
+    background-color: rgb(0, 0, 0);
+    height: 300px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#example{
+    height: 280px;
+    width: 780px;  
+}
+
+#theory{
+    background-color: rgb(0, 0, 0);
+    width: 800px;
+    height: 280px;
+}
+
+#swap{
+    background-color: rgb(169, 115, 255);
+    height: 40px;
+    width: 220px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#heading{
+    font-size: 32px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+#para{
+    color: #6a00ff;
+    font-size: 28px;
+    margin-left: 10px;
+}
+
+#logo{
+    height: 40px;
+    width: 40px;
+    
+}
+
+#code::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media (min-width: 1200px) {
+    
+
+
+    #linked-list-container{
+        overflow: scroll;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+    
+    
+    .ons{
+        background-color: rgb(0, 0, 0);
+        height: 100px;
+        width: 900px;
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+    
+
+}
+
+
+
+
+
+@media (max-width: 590px) {
+    
+    #header{
+        font-size: 15px;
+        height: 50px;
+        margin-top: 5px;
+        margin-left: 5px;
+        width: 100%;
+    }
+
+    #swap{
+        width: 320px;
+    }
+
+    .three{
+        width: 100%;
+    }
+
+    .defin{
+        width: 100%;
+    }
+
+    #content{
+        margin-top: 40px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #panel{
+        flex-direction: column;
+        height: 150px;
+        width: 100%;
+    }
+
+    #visu{
+        width: 100%;
+    }
+
+    #example{
+        width: 100%;
+        height: auto;
+    }
+
+    #img{
+        width: 100%;
+        height: 130px;
+    }
+
+    #theory{
+        width: 360px;
+        height: 200px;
+        margin-bottom: 5px;
+    }
+
+    #code{
+        width: 100%;
+        height: 340px;
+        font-size: 15px;
+
+    }
+
+    #example{
+        height: 130px;
+        width: 100%;
+    }
+
+    .programm{
+        width: 100%;
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+    }
+
+    #para{
+        font-size: 15px;
+    }
+
+}
+
+
+
+  .ons::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .ons::-webkit-scrollbar-track {
+    background: #ff5c5c; 
+  }
+   
+  
+  .ons::-webkit-scrollbar-thumb {
+    background: #c917ae; 
+  }
+  
+  .ons::-webkit-scrollbar-thumb:hover {
+    background: #0e33da; 
+  }
+
+.sllbox::-webkit-scrollbar{
+    display: none;
+}
+
+.linked-list-container::-webkit-scrollbar{
+    display: none;
+}
+
+#header{
+    color: 	#7F00FF;
+
+    border: 1px solid rgb(128, 0, 255);;
+}
+
+@media (min-width: 800px) {
+    
+    .sllbox{
+        width: 100%;
+        display: flex;
+        justify-content:center ;
+        align-items: center;
+    }
+
+    .ons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .defin{
+        width: 47%;
+    }
+
+    .programm{
+        width: 47%;
+    }
+
+    #img{
+        width: 100%;
+    }
+
+    #theory{
+        width: 100%;
+    }
+
+    #example{
+        width: 98%;
+    }
+
+
+
+}
+

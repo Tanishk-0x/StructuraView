@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Data Structure Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- //-------------------------------------------------------------------- -->
+
+    <header id="header">
+        <h1>Queue Visualization</h1>
+    </header>
+
+
+
+
+
+            <div class="main">
+                <div class="display">
+
+                    <button id="back" onclick="window.history.back()">Back</button>
+
+                    <div id="screen"></div>
+                </div>
+    
+    
+                    <div class="one">
+                        <input type="number" id="enqueue-input" placeholder="Enter value">
+                        <button class="enqueue" id="click">Enqueue</button>
+                        <button class="dequeue" id="click">Dequeue</button>
+                    </div>
+    
+    
+                    <div class="two">
+                        <button class="peek" id="click">Peek</button>
+                        <button class="size" id="click">Size</button>
+                        <button class="isempty" id="click">Empty</button>
+                    </div>
+
+                    <div class="output">
+                        <p id="p"><span style="color: rgb(210, 200, 200);">Size:</span><span>&nbsp;</span><span id="queue-size">0</span>&nbsp;&nbsp;</p>            
+                        <p id="p"><span style="color: rgb(204, 204, 204);">Elements:</span><span id="queue-elements"></span></p>
+                    </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header id="main-queue">
+
+        <div class="left">
+            <img src="left.png" id="arrows">
+        </div>
+
+
+        <div class="queue"></div>
+
+
+        <div class="right">
+            <img src="right.png" id="arrows">
+        </div>
+
+    </header>
+
+
+    <header id="items">
+
+        <div class="defin">
+
+            <div class="theory">
+
+                <p id="spl">What is Queue Data Structure</p>
+
+                <p id="para">A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle. <br> It operates like a line where elements are added at one end and removed from the other end.</p>
+
+                <p
+                id="spn">Basic Opeartion of Queue data structure</p>
+
+                <p id="opp">
+                    <span id="point">Enqueue (Insert) : </span> Adds an element to the rear of the queue. <br>
+                    <span id="point">Dequeue (Delete) : </span> Removes and returns the element from the front of the queue. <br>
+                    <span id="point">Peek : </span> Returns the element at the front of the queue without removing it. <br>
+                    <span id="point">Empty : </span> Checks if the queue is empty. <br>
+                    <span id="point">Full : </span> Checks if the queue is full.
+                </p>
+
+            </div>
+
+            <div class="imgs">
+                <img src="queue-ex.png" id="queue-img">
+            </div>
+
+        </div>
+
+        <div class="code">
+            <textarea name="code" id="codee">
+
+    #include <bits/stdc++.h>
+    using namespace std;
+
+    struct Queue {
+        int front, rear, capacity;
+        int* queue;
+    
+        // Constructor to initialize the queue
+        Queue(int c)
+        {
+            front = 0;
+            rear = -1;
+            capacity = c;
+            queue = new int[c];
+        }
+
+        // Destructor to free the allocated memory
+        ~Queue() { delete[] queue; }
+
+        // Function to insert an element at the rear of the queue
+        void queueEnqueue(int data){
+
+            // Check if the queue is full
+            if (rear == capacity - 1) {
+                printf("\nQueue is full\n");
+                return;
+            }
+
+            // Insert element at the rear
+            queue[++rear] = data;
+        }
+
+        // Function to delete an element from the front 
+        // of the queue
+        void queueDequeue(){
+
+            // If the queue is empty
+            if (front > rear) {
+                printf("\nQueue is empty\n");
+                 return;
+            }
+
+            // Shift all elements from index 1 till rear to 
+            // the left by one
+            for (int i = 0; i < rear; i++) {
+                queue[i] = queue[i + 1];
+            }
+
+            // Decrement rear
+            rear--;
+        }
+
+        // Function to print queue elements
+        void queueDisplay(){
+
+            if (front > rear) {
+                printf("\nQueue is Empty\n");
+                return;
+            }
+
+            // Traverse front to rear and print elements
+            for (int i = front; i <= rear; i++) {
+                printf(" %d <-- ", queue[i]);
+            }
+            printf("\n");
+        }
+
+        // Function to print the front of the queue
+        void queueFront()
+        {
+            if (rear == -1) {
+                printf("\nQueue is Empty\n");
+                return;
+            }
+            printf("\nFront Element is: %d\n", queue[front]);
+        }
+    };
+
+    // Driver code
+    int main(void)
+    {
+
+        // Create a queue of capacity 4
+        Queue q(4);
+
+        // Print queue elements
+        q.queueDisplay();
+
+        // Insert elements in the queue
+        q.queueEnqueue(20);
+        q.queueEnqueue(30);
+        q.queueEnqueue(40);
+        q.queueEnqueue(50);
+
+        // Print queue elements
+        q.queueDisplay();
+
+        // Insert element in the queue
+        q.queueEnqueue(60);
+
+        // Print queue elements
+        q.queueDisplay();
+
+        // Dequeue elements
+        q.queueDequeue();
+        q.queueDequeue();
+
+        printf("\nAfter two node deletions\n");
+
+        // Print queue elements
+        q.queueDisplay();
+    
+        printf("\nAfter one insertion\n");
+        q.queueEnqueue(60);
+    
+        // Print queue elements
+        q.queueDisplay();
+
+        // Print front of the queue
+        q.queueFront();
+
+        return 0;
+    }
+
+
+            </textarea>
+        </div>
+
+    </header>
+
+
+<!-- //-------------------------------------------------------------------- -->
+
+    <script src="script.js"></script>
+</body>
+</html>

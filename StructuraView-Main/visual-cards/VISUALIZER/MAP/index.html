@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="mass">
+            <h1>Map Visualization</h1>
+            <p id="limit">Note: Limit is 6 </p>
+    </header>
+
+    <header id="header">
+
+
+
+        <div id="controls">
+
+            <div class="back">
+                <button id="back" onclick="window.history.back()">Back</button>
+            </div>
+
+            <div class="first">
+                <input id="key-input" type="number" placeholder="Key">
+                <input id="value-input" type="number" placeholder="Value">
+                <button id="set-btn" class="btn btn-primary">Set</button>
+            </div>
+
+            <div class="sec">             
+            <input id="get-key-input" type="number" placeholder="Key">
+            <button id="get-btn" class="btn btn-success">Get</button>
+            </div>
+
+            <dic class="third">
+                <input id="delete-key-input" type="number" placeholder="Key">
+                <button id="delete-btn" class="btn btn-danger">Delete</button>   
+                <button id="clear-btn" class="btn btn-warning">Clear</button> 
+            </dic>
+
+
+           
+        </div>
+
+    </header>
+
+
+
+    <div id="map-container"></div>
+
+
+    <div class="infos">
+
+        <!-- <div class="content">
+            <div class="one"></div>
+            <div class="two"></div>
+        </div>
+
+        <div class="img">
+            <div class="three"></div>
+        </div> -->
+
+        <header class="maintain">
+            <div class="text">
+            <div class="one">
+                <h2 style="color: white;">
+                    <span style="font-size: 30px; color: rgb(144, 0, 255);">Map = </span> A map is a container for elements that are stored as a combination of keys and corresponding values. Maps, as opposed to arrays or lists, use unique keys to identify and access their associated values. This enables fast data retrieval and modification without the need to know the specific index or position.
+                    Maps are associative containers that store elements in a mapped fashion. Each element has a key value and a mapped value. No two mapped values can have the same key values.
+
+std::map is the class template for map containers and it is defined inside the<map> header file.
+                </h2>
+            </div>
+
+            <div class="img">
+                <img id="photo" src="map.png">
+            </div>
+
+             
+        </div>
+        
+
+
+            <div class="code">
+                <textarea name="code" id="code">
+
+    #include <iostream>
+    #include <map>
+    #include <string>
+    using namespace std;
+
+    int main(){
+
+  // Create a map of strings to integers
+
+        map<string, int> mp;
+
+  // Insert some values into the map
+
+        mp["one"] = 1;
+        mp["two"] = 2;
+        mp["three"] = 3;
+
+  // Get an iterator pointing to the first element in map
+
+        map<string, int>::iterator it = mp.begin();
+
+  // Iterate through the map and print the elements
+
+        while (it != mp.end()) {
+            cout << "Key: " << it->first
+                    << ", Value: " << it->second << endl;
+            ++it;
+        }
+
+        return 0;
+    }
+
+
+                </textarea>
+            </div>
+
+        </header>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <div id="display"></div>
+    <script src="script.js"></script>
+</body>
+</html>

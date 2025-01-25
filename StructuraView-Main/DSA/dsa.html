@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Explore</title>
+
+  <link
+  rel="icon"
+  href="title.png"
+  type="image/x-icon"
+  />
+
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+
+  <link rel="stylesheet" href="dsa.css" />
+  <link rel="stylesheet" href="dsa-res.css">
+
+  <style>
+    .table .thead-dark th {
+      color: #fff;
+      background-color: #343a40;
+      border-color: #454d55;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //------- Preoader Section ---------------------------------------------------------------             -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+        #loader {
+            border: 12px solid #000000;
+            border-radius: 50%;
+            border-top: 12px solid #8c00ff;
+            width: 70px;
+            height: 70px;
+            animation: spin 1s linear infinite;
+        }
+
+        .center {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loader" class="center"></div>
+
+
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+<!-- //--------------------------------------------------------------------------             -->
+
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+  <header class="slect">
+    
+    <button id="back" onclick="window.history.back()">Back</button>
+
+    <h1>Data Structres & Algorithm</h1></header>
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+  
+
+<div id="tab-menu-div">
+    <div class="tab">
+      <button id="firsttab" class="tablinks" onclick="openTab(event, 'Account')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">What is DSA?</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Replenish')">
+        <div class="tab-button">
+          <div class=" ">
+            <p class="font-payment-tab-button-p">What is Data Structure?</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Same-Day')">
+        <div class="tab-button">
+          <div class=" ">
+            <p class="font-payment-tab-button-p">What is Algorithm?</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Orders')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">
+              How to start learning DSA?
+            </p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Subscriptions')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Learn About Complexities</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Reservations')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Learn Data Structures</p>
+          </div>
+        </div>
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'Addresses')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Learn Algorithms</p>
+          </div>
+        </div>
+      </button>
+
+    </div>
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- // ------------- first que ------------->
+
+  <div id="Account" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">What is DSA?</div>
+      <div id="hero-content">
+        <p>
+          Data structure and algorithms is a branch of computer science that
+          deals with creating machine-efficient and optimized computer
+          programs. The term Data Structure refers to the storage and
+          organization of data, and Algorithm refers to the step by step
+          procedure to solve a problem. By combining "data structure" and
+          "algorithm", we optimize the codes in software engineering.
+        </p>
+        <br />
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <img id="imgHash"
+          src="imag/page1.jpg" height="500px"
+          alt="" />
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+      </div>
+    </div>
+
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //-------- second que ----------------------------------->  
+
+    <div id="Replenish" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">What is Data Structure?</div>
+      <div id="hero-content">
+
+        <p>
+          A data structure is defined as a particular way of storing and
+          organizing data in our devices to use the data efficiently and
+          effectively. The main idea behind using data structures is to
+          minimize the time and space complexities. An efficient data
+          structure takes minimum memory space and requires minimum time to
+          execute the data.
+        </p>
+
+        <h3>
+          A data structure is a storage that is used to store and organize
+          data. It is a way of arranging data on a computer so that it can be
+          accessed and updated efficiently.
+        </h3>
+
+        <h3>Classification of Data Structure:</h3>
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <img id="imgHash"
+        src="imag/classifiaction.png"
+          alt="" />
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <p>
+          <b> Linear data structure:</b> Data structure in which data elements
+          are arranged sequentially or linearly, where each element is
+          attached to its previous and next adjacent elements, is called a
+          linear data structure.Examples of this data structure are queue,
+          stack, array,etc
+        </p>
+
+        <p>
+          <b> Non-linear data structure:</b> Data structures where data
+          elements are not placed sequentially or linearly are called
+          non-linear data structures. In a non-linear data structure, we can’t
+          traverse all the elements in a single run only. Examples of
+          non-linear data structures are trees and graphs.
+        </p>
+
+        <h3>Some popular Data Structures : </h3>
+
+        <ul>
+          <li>Array</li>
+          <li>Linked List</li>
+          <li>Stack</li>
+          <li>Queue</li>
+          <li>Binary Tree</li>
+          <li>Binary Search Tree</li>
+          <li>Heap</li>
+          <li>Hashing</li>
+          <li>Graph</li>
+          <li>Matrix</li>
+        </ul>
+
+      </div>
+    </div>
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- // ----------- third que --------------------------->
+
+    <div id="Same-Day" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">What is Algorithm?</div>
+      <div id="hero-content">
+
+        <p>
+          Algorithm is defined as a process or set of well-defined
+          instructions that are typically used to solve a particular group of
+          problems or perform a specific type of calculation. To explain in
+          simpler terms, it is a set of operations performed in a step-by-step
+          manner to execute a task.
+        </p>
+
+        <p>
+          The word Algorithm means ” A set of finite rules or instructions to
+          be followed in calculations or other problem-solving operations ” Or
+          ” A procedure for solving a mathematical problem in a finite number
+          of steps that frequently involves recursive operations”.
+        </p>
+
+        <h3>
+          Algorithms can be simple and complex depending on what you want to
+          achieve.
+        </h3>
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <img id="imgHash" src="imag/algo.png" height="500px" width="800px"
+          alt="" />
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+        <img id="imgHash"
+          src="imag/chracterstics.png"
+          alt="" />
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <h3>Properties of Algorithm:</h3>
+
+        <ul>
+          <li>It should terminate after a finite time.</li>
+          <li>It should produce at least one output.</li>
+          <li>It should take zero or more input.</li>
+          <li>
+            It should be deterministic means giving the same output for the
+            same input case.
+          </li>
+          <li>
+            Every step in the algorithm must be effective i.e. every step
+            should do some work.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //----------- fourth que ---------------  -->
+
+    <div id="Orders" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">How to start learning?</div>
+      <div id="hero-content">
+        <p>
+          The first and foremost thing is dividing the total procedure into
+          little pieces which need to be done sequentially.
+        </p>
+        <h3>
+          The complete process to learn DSA from scratch can be broken into 4
+          parts:
+          <ul>
+            <li>Learn about Time and Space complexities</li>
+            <li>Learn the basics of individual Data Structures</li>
+            <li>Learn the basics of Algorithms</li>
+            <li>Practice Problems on DSA</li>
+          </ul>
+        </h3>
+      </div>
+    </div>
+
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- // --------- fifth que --------------------------------- -->
+
+
+    <div id="Subscriptions" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Learn Complexities</div>
+      <div id="hero-content">
+        <p>
+          Here comes one of the interesting and important topics. The primary
+          motive to use DSA is to solve a problem effectively and efficiently.
+          How can you decide if a program written by you is efficient or not?
+          This is measured by complexities. Complexity is of two types:
+        </p>
+        <ol>
+          <li>
+            <b>Time Complexity:</b> Time complexity is used to measure the
+            amount of time required to execute the code.
+          </li>
+          <li>
+            <b>Space Complexity:</b> Space complexity means the amount of
+            space required to execute successfully the functionalities of the
+            code.
+          </li>
+        </ol>
+        <p>
+          Both of the above complexities are measured with respect to the
+          input parameters. But here arises a problem. The time required for
+          executing a code depends on several factors, such as:
+        </p>
+        <ul>
+          <li>The number of operations performed in the program,</li>
+          <li>The speed of the device, and also</li>
+          <li>
+            The speed of data transfer if being executed on an online
+            platform.
+          </li>
+        </ul>
+        <p>
+          So how can we determine which one is efficient? The answer is the
+          use of asymptotic notation.
+        </p>
+        <h3>
+          Asymptotic notation is a mathematical tool that calculates the
+          required time in terms of input size and does not require the
+          execution of the code.
+        </h3>
+        <p>
+          It neglects the system-dependent constants and is related to only
+          the number of modular operations being performed in the whole
+          program. The following 3 asymptotic notations are mostly used to
+          represent the time complexity of algorithms:
+        </p>
+        <ul>
+          <li>
+            <b>Big-O Notation (Ο) –</b>
+            Big-O notation specifically describes the worst-case scenario.
+          </li>
+          <li>
+            <b>Omega Notation (Ω)</b>
+            Omega(Ω) notation specifically describes the best-case scenario.
+          </li>
+          <li>
+            <b>Theta Notation (θ) –</b>
+            This notation represents the average complexity of an algorithm.
+          </li>
+        </ul>
+        <br />
+        <img id="imgHash" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/mypic.png" alt="" />
+
+        <h3>
+          The most used notation in the analysis of a code is the
+          <u>Big-O Notation</u> which gives an upper bound of the running time
+          of the code (or the amount of memory used in terms of input size).
+        </h3>
+      </div>
+    </div>
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------ sixth que ---------------------------->
+
+
+    <div id="Reservations" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Learn Data Structures</div>
+      <div id="hero-content">
+        <p>
+          Here we have followed the flow of learning a data structure and then
+          the most related and important algorithms used by that data
+          structure.
+        </p>
+        <h3>1. Array</h3>
+        <p>
+          The most basic yet important data structure is the array. It is a
+          linear data structure. An array is a collection of homogeneous data
+          types where the elements are allocated contiguous memory. Because of
+          the contiguous allocation of memory, any element of an array can be
+          accessed in constant time. Each array element has a corresponding
+          index number.
+        </p>
+        <img id="imgHash" src="imag/array.png" alt="" />
+        <br />
+        <h3>2. String</h3>
+        <p>
+          A string is also a type of array. It can be interpreted as an array
+          of characters. But it has some special characteristics like the last
+          character of a string is a null character to denote the end of the
+          string. Also, there are some unique operations, like concatenation
+          which concatenates two strings into one.
+        </p>
+        <img id="imgHash" src="imag/string.png" alt="" />
+        <br />
+        <h3>3. Linked Lists</h3>
+        <p>
+          As the above data structures, the linked list is also a linear data
+          structure. But Linked List is different from Array in its
+          configuration. It is not allocated to contiguous memory locations.
+          Instead, each node of the linked list is allocated to some random
+          memory space and the previous node maintains a pointer that points
+          to this node. So no direct memory access of any node is possible and
+          it is also dynamic i.e., the size of the linked list can be adjusted
+          at any time.
+        </p>
+        <img id="imgHash" src="imag/linked list.png" alt="" />
+        <br />
+        <h3>4. Matrix/Grid</h3>
+        <p>
+          A matrix represents a collection of numbers arranged in an order of
+          rows and columns. It is necessary to enclose the elements of a
+          matrix in parentheses or brackets.
+        </p>
+        <h3>For example:</h3>
+        <p>A matrix with 9 elements is shown below.</p>
+        <img id="imgHash" src="imag/matrix.png" alt="" />
+        <p>
+          This Matrix [M] has 3 rows and 3 columns. Each element of matrix [M]
+          can be referred to by its row and column number. For example, a23 =
+          6.
+        </p>
+        <br />
+        <h3>5. Stack</h3>
+        <p>
+          Stack is a linear data structure which follows a particular order in
+          which the operations are performed. The order may be LIFO(Last In
+          First Out) or FILO(First In Last Out).
+        </p>
+        <img id="imgHash" src="imag/stack.png" alt="" />
+        <p>
+          The reason why Stack is considered a complex data structure is that
+          it uses other data structures for implementation, such as Arrays,
+          Linked lists, etc. based on the characteristics and features of
+          Stack data structure.
+        </p>
+        <br />
+        <h3>6. Queue</h3>
+        <p>
+          A Queue is a linear structure which follows First In First Out
+          (FIFO) approach in its individual operations.
+        </p>
+        <img id="imgHash" src="imag/queue.png" alt="" />
+        <p>A queue can be of different types like</p>
+        <ul>
+          <li>
+            <b>Circular queue – </b>In a circular queue the last element is
+            connected to the first element of the queue
+          </li>
+          <li>
+            <b>Double-ended queue (or known as deque) –</b> A double-ended
+            queue is a special type of queue where one can perform the
+            operations from both ends of the queue.
+          </li>
+          <li>
+            <b>Priority queue – </b>It is a special type of queue where the
+            elements are arranged as per their priority. A low priority
+            element is dequeued after a high priority element.
+          </li>
+        </ul>
+        <br />
+        <h3>7. Heap</h3>
+        <p>
+          A Heap is a special Tree-based Data Structure in which the tree is a
+          <b>complete binary tree.</b>
+        </p>
+        <h3>Types of heaps:</h3>
+        <p>
+          <b>Max-Heap: </b>In this heap, the value of the root node must be
+          the greatest among all its child nodes and the same thing must be
+          done for its left and right sub-tree also.
+        </p>
+        <p>
+          <b>Min-Heap: </b>In this heap, the value of the root node must be
+          the smallest among all its child nodes and the same thing must be
+          done for its left ans right sub-tree also.
+        </p>
+        <img id="imgHash" src="imag/heap.png" alt="" />
+        <br />
+        <h3>8. Hash</h3>
+        <p>
+          Hashing refers to the process of generating a fixed-size output from
+          an input of variable size using the mathematical formulas known as
+          hash functions. This technique determines an index or location for
+          the storage of an item in a data structure.
+        </p>
+        <br />
+        <h3>9. Tree Data Structures</h3>
+        <p>
+          Tree data structure is similar to a tree we see in nature but it is
+          upside down. It also has a root and leaves. The root is the first
+          node of the tree and the leaves are the ones at the bottom-most
+          level. The special characteristic of a tree is that there is only
+          one path to go from any of its nodes to any other node.
+        </p>
+        <img id="imgHash" src="imag/data tree.png"
+          alt="" />
+        <p>
+          Based on the maximum number of children of a node of the tree it can
+          be –
+        </p>
+        <ul>
+          <li>
+            <b>Binary tree –</b>This is a special type of tree where each node
+            can have a maximum of 2 children.
+          </li>
+          <li>
+            <b>Ternary tree –</b>This is a special type of tree where each
+            node can have a maximum of 3 children.
+          </li>
+          <li>
+            <b>N-ary tree – </b> In this type of tree, a node can have at most
+            N children.
+          </li>
+        </ul>
+        <p>
+          Based on the configuration of nodes there are also several
+          classifications. Some of them are:
+        </p>
+        <ul>
+          <li>
+            <b>Complete Binary Tree – </b>In this type of binary tree all the
+            levels are filled except maybe for the last level. But the last
+            level elements are filled as left as possible.
+          </li>
+          <li>
+            <b>Perfect Binary Tree –</b> A perfect binary tree has all the
+            levels filled
+          </li>
+          <li>
+            <b>Binary Search Tree – </b>A binary search tree is a special type
+            of binary tree where the smaller node is put to the left of a node
+            and a higher value node is put to the right of a node
+          </li>
+          <li>
+            <b>Ternary Search Tree – </b>It is similar to a binary search
+            tree, except for the fact that here one element can have at most 3
+            children.
+          </li>
+        </ul>
+        <br />
+        <h3>10. Graph Data Structure</h3>
+        <p>
+          A Graph is a non-linear data structure consisting of a finite set of
+          vertices(or nodes) and a set of edges that connect a pair of nodes.
+        </p>
+        <img id="imgHash" src="imag/graph.png" alt="" />
+        <p>
+          Each edge shows a connection between a pair of nodes. This data
+          structure helps solve many real-life problems. Based on the
+          orientation of the edges and the nodes there are various types of
+          graphs.
+        </p>
+      </div>
+    </div>
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------ seveth que --------------------------------->
+
+
+    <div id="Addresses" class="tabcontent">
+      <div class="tab-content-heading">Learn Algorithms</div>
+      <div id="hero-content">
+        <p>Once you have cleared the concepts of Data Structures, now its time to start your journey through the
+          Algorithms. Based on the type of nature and usage, the Algorithms are grouped together into several
+          categories, as shown below:</p>
+        <h3>1. Searching Algorithm</h3>
+        <p>Searching algorithms are used to find a specific element in an array, string, linked list, or some other data
+          structure. </p>
+        <p>The most common searching algorithms are:</p>
+        <ul>
+          <li><b>Linear Search –</b>In this searching algorithm, we check for the element iteratively from one end to
+            the other.</li>
+          <li><b>Binary Search – </b> In this type of searching algorithm, we break the data structure into two equal
+            parts and try to decide in which half we need to find for the element. </li>
+          <li><b>Ternary Search – </b>In this case, the array is divided into three parts, and based on the values at
+            partitioning positions we decide the segment where we need to find the required element.</li>
+        </ul>
+        <br>
+        <h3>2. Sorting Algorithm</h3>
+        <p>Sorting Algorithm is used to rearrange a given array or list elements according to a comparison operator on
+          the elements. The comparison operator is used to decide the new order of element in the respective data
+          structure.</p>
+
+          <p>There are a lot of different types of sorting algorithms. Some widely used algorithms are:</p>
+        <ul>
+          <li>Bubble Sort</li>
+          <li>Selection Sort</li>
+          <li>Insertion Sort</li>
+          <li>Quick Sort</li>
+          <li>Merge Sort</li>
+
+        </ul>
+        <br>
+        <h3>3. Divide and Conquer Algorithm</h3>
+        <p>Divide and Conquer is an algorithmic paradigm. A typical Divide and Conquer algorithm solves a problem using
+          following three steps.</p>
+        <ol>
+          <li>Divide: Break the given problem into subproblems of same type.</li>
+          <li>Conquer: Recursively solve these subproblems</li>
+          <li>Combine: Appropriately combine the answers
+          </li>
+        </ol>
+        <p>This is the primary technique mentioned in the two sorting algorithms Merge Sort and Quick Sort which are
+          mentioned earlier. To learn more about the technique, the cases where it is used, and its implementation and
+          solve some interesting problems, please refer to the dedicated article Divide and Conquer Algorithm.</p>
+        <br>
+        <h3>4. Greedy Algorithms</h3>
+        <p>As the name suggests, this algorithm builds up the solution one piece at a time and chooses the next piece
+          which gives the most obvious and immediate benefit i.e., which is the most optimal choice at that moment. So
+          the problems where choosing locally optimal also leads to the global solutions are best fit for Greedy.</p>
+        <p>For example, consider the Fractional Knapsack Problem. The local optimal strategy is to choose the item that
+          has maximum value vs weight ratio. This strategy also leads to a globally optimal solution because we are
+          allowed to take fractions of an item.</p>
+        <br>
+        <h3>5. Recursion</h3>
+        <p>Recursion is one of the most important algorithms which uses the concept of code reusability and repeated
+          usage of the same piece of code. </p>
+        <br>
+        <h3>6. Backtracking Algorithm</h3>
+        <p>Backtracking is an algorithmic technique for solving problems recursively by trying to build a solution
+          incrementally, one piece at a time, removing those solutions that fail to satisfy the constraints of the
+          problem at any point of time </p>
+        <br>
+        <h3>7. Dynamic Programming</h3>
+        <p>The main concept of the Dynamic Programming algorithm is to use the previously calculated result to avoid
+          repeated calculations of the same subtask which helps in reducing the time complexity. </p>
+        <br>
+        <h3>8. Pattern Searching</h3>
+        <p>The Pattern Searching algorithms are sometimes also referred to as String Searching Algorithms and are
+          considered as a part of the String algorithms. These algorithms are useful in the case of searching a string
+          within another string.</p>
+        <h3>9. Bitwise Algorithms</h3>
+        <p>The Bitwise Algorithms is used to perform operations at the bit-level or to manipulate bits in different
+          ways. The bitwise operations are found to be much faster and are sometimes used to improve the efficiency of a
+          program.</p>
+
+        <p> For example: To check if a number is even or odd. This can be easily done by using Bitwise-AND(&) operator.
+          If the last bit of the operator is set than it is ODD otherwise it is EVEN. Therefore, if num & 1 not equals
+          to zero than num is ODD otherwise it is EVEN.</p>
+
+      </div>
+    </div>
+
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- //------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+  <script src="dsa.js"></script>
+</body>
+
+</html>

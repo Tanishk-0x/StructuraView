@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise Operators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <h1>BitWise Operators</h1>
+    </header>
+
+    <header id="panel">
+        <div class="one">
+
+            <button id="back" onclick="window.history.back()">Back</button>
+
+            <input type="number" id="num1" placeholder="number 1">
+            <input type="number" id="num2" placeholder="number 2">
+        </div>
+
+        <div class="two">
+            <button id="or-btn" class ="click">OR</button>
+            <button id="and-btn" class ="click">AND</button>
+            <button id="not-btn" class ="click">NOT</button>
+            <button id="xor-btn" class ="click">XOR</button>
+        </div>
+
+        <div class="twos">
+            <button id="left-shift-btn" class ="click"><<</button>
+            <button id="right-shift-btn" class ="click">>></button>
+        </div>
+
+        <div class="three">
+            <div id="result"></div>
+        </div>
+
+    </header>
+
+
+    <header id="content">
+
+        <div class="defin">
+            <div id="imgs">
+                <img src="image/AND.png" id="truth">
+            </div>
+            <div id="theory">
+                <h2 id="heading">What is AND Operator</h2>
+
+                <p id="para">
+                    The bitwise AND & operator returns 1 if and only if both the operands are 1. Otherwise, it returns 0.
+
+The following table demonstrates the working of the bitwise AND operator. Let a and b be two operands that can only take binary values i.e. 1 and 0.
+                </p>
+            </div>
+        </div>
+
+        <div class="code">
+            <textarea name="code" id="code">
+
+    // ----------------------------------- 
+    // -- AND Operator ---
+
+        #include <iostream>
+        int main() {
+
+            std::cout << (4 & 5) << "\n";
+
+           return 0;
+        }
+        // Output: 100 
+        (base-2 binary system) = 4
+
+        
+    // ---------------------------------- 
+    // -- OR Operator ---
+
+        
+        #include <iostream>
+        int main() {
+
+            std::cout << (4 | 5) << std::endl;
+
+          return 0;
+        }
+        // Output: 101 
+        (base-2 binary system) = 5
+
+
+    // ------------------------------- 
+    // -- XOR Operator ---
+
+        
+        #include <iostream>
+        int main() {
+
+            std::cout << (12 ^ 10) << "\n";
+
+          return 0;
+        }
+        // Output: 6
+
+
+    // -------------------------------------- 
+    // --  Left_Shift Operator ---
+
+        
+        #include <iostream>
+        int main() {
+
+            std::cout << (4 << 1) << "\n";   
+              // Output: 1000 = 8
+
+            std::cout << (4 << 2) << "\n";  
+               // Output: 10000 = 16
+
+          return 0;
+        }
+
+
+    // ---------------------------------- 
+    // --  Right_Shift Operator ---
+
+        
+        #include <iostream>
+        int main() {
+
+            std::cout << (4 >> 1) << "\n";  
+              // Output: 10 = 2
+
+            std::cout << (4 >> 2) << "\n";  
+              // Output: 1 = 1
+
+          return 0;
+        }
+
+            </textarea>
+        </div>
+
+    </header>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

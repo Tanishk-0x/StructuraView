@@ -1,0 +1,773 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading {
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    height: 620px;
+    width: 1000px;
+    background-color: white;
+    box-shadow: 8px 8px 20px rgb(128, 128, 128);
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.container-header {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.container-header input {
+    height: 50px;
+    width: 400px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.push,
+.pop,
+.reset
+ {
+    height: 50px;
+    width: 140px;
+    font-size: 25px;
+    background-color: rgb(132, 0, 255);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    border: none;
+}
+/* .disable-button {
+    background-color: rgb(0, 59, 0);
+} */
+
+.container-header button:active {
+    transform: scale(0.95);
+}
+.container-body {
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stack {
+    width: 500px;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0 3px 0 0;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+}
+
+.main-stack-bucket {
+    height: 450px;
+    width: 200px;
+    border-width: 0 4px 4px 4px;
+    border-color: rgb(162, 0, 255);
+    border-style: solid;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+
+.ele {
+    height: 80px;
+    width: 170px;
+    color: white;
+    background-color: rgb(123, 0, 255);
+
+    border: 4px black solid;
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ele-add {
+    animation: pushAnimation 0.1s infinite linear;
+}
+.ele-remove {
+    animation: popAnimation 0.1s infinite linear;
+}
+@keyframes pushAnimation {
+    0% {
+        background-color: rgb(123, 0, 255);
+    }
+    100% {
+        background-color: rgb(123, 0, 255);
+    }
+}
+@keyframes popAnimation {
+    0% {
+        background-color: rgb(123, 0, 255);
+
+    }
+    100% {
+        background-color: rgb(187, 123, 255);
+
+    }
+}
+
+.info {
+    height: 470px;
+    width: 500px;
+    padding-left: 20px;
+}
+
+[class^="sec"] {
+    display: flex;
+    width: 350px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+
+
+.massage-box h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+.massage {
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.error-massage {
+    animation: errorMassage 0.4s infinite linear;
+}
+@keyframes errorMassage {
+    0% {
+        border: 3px solid rgb(255, 0, 0);
+    }
+    100% {
+        border : 3px solid rgb(0, 4, 255);
+    }
+}
+
+.text {
+    height: 50px;
+    z-index: 20px;
+}
+
+#heading {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px ; 
+    color: rgb(179, 0, 255);
+}
+
+.container-body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+
+#lifo {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+#img {
+    height: 80px;
+    width: 150px;
+}
+
+.stack {
+    background-color: rgb(0, 0, 0);
+
+}
+
+.info {
+    background-color: rgb(0, 0, 0);
+}
+
+.container-header {
+    background-color: rgb(0, 0, 0);
+}
+
+.sec1 , .sec2 , .sec3 , .sec4 {
+    color: white;
+}
+
+.massage {
+    color: white;
+}
+
+#heading {
+    border: 2px solid gray;
+}
+
+.info {
+    border: 2px solid gray;
+}
+
+.container-header {
+    border: 2px solid gray;
+}
+
+.stack {
+    width: 370px;
+}
+
+.main-stack-bucket {
+    height: 250px;
+}
+
+.ele {
+    height: 35px;
+}
+
+.btns{
+    background-color: rgb(0, 0, 0);
+}
+
+#heading{
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(128, 0, 255);
+    color: rgb(128, 0, 255);
+}
+
+#panel{
+    background-color: rgb(0, 0, 0);
+    height: 68px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hints{
+    background-color: rgb(0, 0, 0);
+    width: 1200px;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+#click{
+    background: linear-gradient(to right , rgb(132, 0, 255) , rgb(180, 90, 254) );
+    height: 35px;
+    width: 70px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#back{
+    background-color: black;
+    border: 1px solid rgb(128, 0, 255);
+    color: rgb(128, 0, 255);
+    height: 35px;
+    width: 70px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#click:hover{
+    background: linear-gradient(to left , rgb(132, 0, 255) , rgb(180, 90, 254) );
+}
+
+.sec1 , .sec2 , .sec3 , .sec4 {
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    width: 340px;
+}
+
+.box{
+    background-color: rgb(0, 0, 0);
+    height: 42px;
+    width: 130px;
+    border: 1px solid rgb(128, 0, 255);
+    border-radius: 6px;
+    color: rgb(128, 0, 255);
+}
+
+.btns{
+    height: 60px;
+}
+
+.sec2{
+    margin-left: 10px;
+}
+
+.sec1{
+    margin-left: 10px;
+}
+
+#tess{
+    font-size: 17px;
+}
+
+
+.massage-box{
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    border-radius: 0px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    border: 1px solid rgb(128, 0, 255);
+}
+
+.massage{
+    background-color: rgb(0, 0, 0);
+    height: 36px;
+    width: 320px;
+    font-size: 17px;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#click{
+    margin-left: 10px;
+}
+
+.hintss{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#lifo{
+    background-color: rgb(0, 0, 0);
+    width: 340px;
+}
+
+.stack{
+    background-color: rgb(0, 0, 0);
+    width: 340px;
+}
+
+#items{
+    background-color: rgb(0, 0, 0);
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    border: 1px solid rgb(128, 0, 255);
+}
+
+.defin{
+    background-color: rgb(0, 0, 0);
+    height: 640px;
+    width: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgs{
+    height: 280px;
+    width: 618px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#st-img{
+    height: 275px;
+}
+
+.theory{
+    background-color: rgb(0, 0, 0);
+    height: 350px;
+    width: 618px;
+}
+
+.code{
+    background-color: rgb(0, 0, 0);
+    height: 640px;
+    width: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#code{
+    height: 635px;
+    width: 675px;
+    border: 1px solid rgb(128, 0, 255);
+    color: rgb(128, 0, 255);
+    background-color: black;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+#code::-webkit-scrollbar{
+    display: none;
+}
+
+.visu{
+    height: 640px;
+    background-color: rgb(0, 0, 0);
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#dpn{
+    color: white;
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+#spx{
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+}
+
+#spn{
+    color: white ; 
+    font-size: 21px;
+    margin-left: 10px;
+}
+
+#point{
+    color: white;
+    font-size: 19px;
+    margin-left: 10px;
+}
+
+#para{
+    color: rgb(128, 0, 255);
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 590px) {
+    #heading {
+        width: 100%;
+        font-size: 35px;
+        height: 50px;
+        margin-top: 5px;
+    }
+
+    .theory{
+        width: 340px;
+
+    }
+
+    .imgs{
+        width: 100%;
+    }
+
+    #para{
+        font-size: 11px;
+    }
+
+    #spn{
+        font-size: 13px;
+    }
+
+    #dpn{
+        font-size: 13px;
+    }
+
+    #spx{
+        font-size: 12px;
+    }
+
+    #point{
+        font-size: 12px;
+    }
+
+    .btns{
+        height: 40px;
+    }
+
+    .sec1{
+        margin-top: 0px;
+        height: 40px;
+    }
+
+    #items{
+        height: 1000px;
+        flex-direction: column;
+        margin-top: 60px;
+        border: none;
+        margin-right: 0%;
+
+    }
+
+    .defin , .visu , .code {
+        width: 340px;
+    }
+
+    .defin{
+        height: 500px;
+    }
+
+    .imgs{
+        height: 150px;
+        margin-top: 7px;
+    }
+
+    #st-img{
+        
+        width: 330px;
+        height: auto;
+    }
+
+    .theory{
+        height: 260px;
+    }
+
+    .sec2{
+        margin-top: 0px;
+        height: 40px;
+    }
+
+    .hintss{
+        flex-direction: column;
+    }
+
+    #code{
+        height: 340px;
+        width: 340px;
+        font-size: 11px;
+    }
+
+    #panel{
+        margin-top: 5px;
+        height: 220px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btns{
+        width: 340px;
+    }
+
+
+
+    .btns{
+        margin-top: 0px;
+    }
+
+    .sec1 , .sec2 {
+        width: 340px;
+        margin-left: 10px;
+    }
+
+    .massage-box{
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+
+    .massage{
+        font-size: 12px;
+        height: 36px;
+    }
+        #tess{
+        font-size: 12px;
+    }
+
+    .box{
+        width: 120px;
+        height: 34px;
+
+    }
+
+
+
+    .stack {
+        width: 340px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #lifo{
+        margin-top: 5px;
+        width: 340px;
+        height: 40px;
+    }
+
+    .main-stack-bucket {
+        height: 250px;
+
+    }
+
+
+
+
+    .ele {
+        height: 35px;
+    }
+
+    .code{
+        margin-top: 7px;
+    }
+
+
+}
+
+
+@media (min-width: 1000px) {
+    
+    #items{
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+    }
+
+    .visu{
+        background-color: rgb(0, 0, 0);
+        width: 20%;
+    }
+
+    .defin{
+        background-color: rgb(0, 0, 0);
+        width: 40%;
+    }
+
+    .code{
+        background-color: rgb(0, 0, 0);
+        width: 40%;
+    }
+
+    #lifo {
+        width: 60%;
+        background-color: rgb(0, 0, 0);
+    }
+
+    #img{
+        width: 100%;
+    }
+
+    #para{
+        font-size: 17px;
+        margin-right: 10px;
+    }
+
+
+
+}
+
+
+
+
+
+#back{
+    border: 1px solid rgb(140, 0, 255);
+}
+
+
+@media (min-width: 450px)  {
+    
+    #items{
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    #panel{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+
+}
+
+@media (min-width: 1400px) {
+    
+    #items{
+        flex-direction: row;
+        border: none;
+    }
+
+    #panel{
+        flex-direction: row;
+        margin-top: 4px;
+    }
+
+}
+
+.mains{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
